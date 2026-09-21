@@ -1,0 +1,13 @@
+/* APEX Gainesville palette.
+   Blues are the APEX mark from the RAD palette (--rad-apex, --rad-apex-light).
+   Neutrals are this site's paper and ink. Nowhere else in this repo may contain a hex.
+   Mix in theme.css. */
+:root {
+  --apex: #2f6feb;
+  --apex-light: #8fb4ff;
+
+  --apex-ink: #14181a;
+  --apex-bone: #f5f2ec;
+  --apex-white: #ffffff;
+  --apex-sand: #cdc0b1;
+}
