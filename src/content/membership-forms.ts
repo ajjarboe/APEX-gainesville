@@ -8,7 +8,7 @@ export const thanksPath = "/account-management/thanks/";
 export const honeypot = "company";
 
 /** Staff address for the early-return request called out in the freeze copy. */
-export const earlyReturnEmail = "hello@radcollective.us";
+export const earlyReturnEmail = "leadership@radcollective.us";
 
 /** How long the studio takes to answer any of these. */
 export const responseWindow = "within 4 business days";
