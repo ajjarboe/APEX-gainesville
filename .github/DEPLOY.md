@@ -4,7 +4,7 @@ Site: **apexgainesville.com**. First ship is always a **Netlify preview**. Do no
 
 ## Preview first
 
-1. Push the branch (or connect the repo in Netlify) and open the deploy preview URL.
+1. Push the branch and open its pull request (see **Saving changes** in `AGENTS.md` — never push to `main`), then open the deploy preview URL Netlify adds to it.
 2. Click through home, pricing, schedule, and one membership form.
 3. Confirm the schedule iframe loads and a checkout button opens Arketa.
 4. Submit a test cancel/freeze/help with a fake name and confirm it arrives in Netlify Forms.
