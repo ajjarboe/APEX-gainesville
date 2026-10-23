@@ -28,7 +28,7 @@ export const offerings = {
     label: "Monthly Unlimited",
   }),
   annualUnlimited: offeringSchema.parse({
-    id: "QRm7Iji8XFEOBqg3leGq",
+    id: "FfUnQoAxe8asSggUwbTW",
     price: 2299,
     label: "Annual Unlimited",
   }),
@@ -55,7 +55,7 @@ export const offerings = {
     label: "Monthly Infinity — APEX Unlimited + Yoga Pod Unlimited",
   }),
   infinityAnnual: offeringSchema.parse({
-    id: "sNFU5VCbx76ToBC75bvy",
+    id: "xstmrMzhuTwLRyNIDF1t",
     price: 3199,
     label: "Annual Infinity — APEX Unlimited + Yoga Pod Unlimited",
   }),
