@@ -15,7 +15,7 @@ export const teamIntro =
 
 export const ownership = [
   personSchema.parse({
-    photo: "alex",
+    photo: "alex-jarboe-2026",
     name: "Alex Jarboe",
     role: "Owner",
     bio: [
