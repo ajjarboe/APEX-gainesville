@@ -3,13 +3,11 @@ import { faqItemSchema } from "@/content/schema";
 export const firstClass = {
   hero: {
     eyebrow: "New Client Special",
-    title: "2 Weeks Unlimited for $40",
-    lede: "Keep these words as they are on this page. The pricing page lists the intro as $60 for 8 classes in 2 weeks — same studio, two offers written differently right now.",
-    cta: { href: "/pricing/#intro", label: "2 Weeks Unlimited for $40" },
+    title: "8 Classes for $60 in 2 Weeks",
+    lede: "New to APEX? Start with 8 classes in your first 2 weeks. Here is everything to know before you walk in.",
+    cta: { href: "/pricing/#intro", label: "Try 8 classes for $60" },
     secondary: { href: "/schedule/", label: "See the schedule" },
   },
-  mismatchNote:
-    "Heads up: this page still says **$40 for 2 weeks unlimited**. Our [pricing page](/pricing/#intro) lists the current intro as **$60 for 8 classes in 2 weeks**. Ask the desk if you are not sure which one applies.",
   tips: {
     title: "Pro tips",
     groups: [
@@ -25,9 +23,7 @@ export const firstClass = {
       {
         title: "For class",
         items: [
-          "Check in with your scan tag at the front desk and complete your new student waiver.",
-          "Meet your teacher and notify them of any injuries. Plan to stay the entire class.",
-          "No shoes in the APEX room. Store them in the cubbies or locker rooms.",
+          "Check in at the front desk so we can learn your name and help you get into class.",
         ],
       },
       {

@@ -1,7 +1,6 @@
 import { SiteChrome } from "@/components/layout/SiteChrome";
 import { Disclose } from "@/components/patterns/Disclose";
 import { PageHeader } from "@/components/patterns/PageHeader";
-import { RichText } from "@/lib/rich-text";
 import { firstClass } from "@/content/first-class";
 import { pages } from "@/content/pages";
 
@@ -20,14 +19,6 @@ export function YourFirstClassPage() {
           {firstClass.hero.secondary.label}
         </a>
       </PageHeader>
-
-      <section className="band band-tight">
-        <div className="shell-narrow">
-          <p className="fineprint">
-            <RichText text={firstClass.mismatchNote} />
-          </p>
-        </div>
-      </section>
 
       <section className="band">
         <div className="shell">
