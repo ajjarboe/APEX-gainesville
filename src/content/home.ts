@@ -2,7 +2,7 @@ export const home = {
   hero: {
     title: "Full body. High intensity. Low impact.",
     lede: "Megaformer Pilates | Contemporary Pilates",
-    cta: "Try $60 for 8 classes",
+    cta: "Try 8 classes for $60",
     secondary: { href: "/your-first-class/", label: "Your first class" },
     video: "/video/hero.mp4",
     photo: "/img/hero",
@@ -86,6 +86,6 @@ export const home = {
   closing: {
     title: "Eight classes. Two weeks. Sixty dollars.",
     lede: "No contracts. No strings attached. Your intro does not start until your first class.",
-    cta: "Start with $60 for 8 classes",
+    cta: "Start with 8 classes for $60",
   },
 };

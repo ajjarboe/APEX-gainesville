@@ -2,7 +2,7 @@ import { SiteChrome } from "@/components/layout/SiteChrome";
 import { PageHeader } from "@/components/patterns/PageHeader";
 import { PersonCard } from "@/components/patterns/PersonCard";
 import { pages } from "@/content/pages";
-import { directors, ownership, story, teamIntro } from "@/content/team";
+import { directors, faculty, ownership, story, teamIntro } from "@/content/team";
 
 export function OurTeamPage() {
   return (
@@ -31,9 +31,16 @@ export function OurTeamPage() {
             ))}
           </div>
 
-          <h2 className="display-sm mt-14">Director Team</h2>
+          <h2 className="display-sm mt-14">Leadership Team</h2>
           <div className="grid-auto mt-6">
             {directors.map((person) => (
+              <PersonCard key={person.name} person={person} />
+            ))}
+          </div>
+
+          <h2 className="display-sm mt-14">Teacher Training Faculty</h2>
+          <div className="grid-auto mt-6">
+            {faculty.map((person) => (
               <PersonCard key={person.name} person={person} />
             ))}
           </div>

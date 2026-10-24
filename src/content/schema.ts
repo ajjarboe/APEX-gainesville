@@ -7,6 +7,8 @@ export const navLinkSchema = z.object({
 
 export const navGroupSchema = z.object({
   label: z.string(),
+  /** Optional: clicking the group's own label opens this page; hovering still shows the dropdown. */
+  href: z.string().optional(),
   links: z.array(navLinkSchema),
 });
 
@@ -44,6 +46,8 @@ export const personSchema = z.object({
   /** Path stem under /img/team/. Sizes 400 and 800 must exist. */
   photo: z.string().optional(),
   bio: z.array(z.string()).optional(),
+  /** Regular classes, one bullet each, e.g. "**FLOW 2**: Saturdays 10am (NW)". Shown under the bio. */
+  classes: z.array(z.string()).optional(),
 });
 
 export const faqItemSchema = z.object({

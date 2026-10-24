@@ -13,6 +13,7 @@ export const nav = [
   }),
   navGroupSchema.parse({
     label: "Classes",
+    href: "/the-workout/",
     links: [
       { href: "/the-workout/", label: "APEX Signature Pilates" },
       { href: "/deep-space-pilates/", label: "APEX Deep Space Pilates" },
@@ -20,6 +21,7 @@ export const nav = [
   }),
   navGroupSchema.parse({
     label: "Locations",
+    href: "/locations/",
     links: [
       { href: "/schedule/", label: "Gainesville NW" },
       { href: "/schedule/", label: "Gainesville SW" },

@@ -76,15 +76,28 @@ export function SiteHeader({ path }: { path: string }) {
                   onMouseEnter={() => setOpenGroup(item.label)}
                   onMouseLeave={() => setOpenGroup(null)}
                 >
-                  <button
-                    type="button"
-                    className="nav-link"
-                    data-active={matches(item, path)}
-                    aria-expanded={openGroup === item.label}
-                    onClick={() => setOpenGroup(openGroup === item.label ? null : item.label)}
-                  >
-                    {item.label}
-                  </button>
+                  {item.href ? (
+                    <a
+                      className="nav-link"
+                      href={item.href}
+                      data-active={matches(item, path) || item.href === path}
+                      aria-haspopup="true"
+                      aria-expanded={openGroup === item.label}
+                      onFocus={() => setOpenGroup(item.label)}
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <button
+                      type="button"
+                      className="nav-link"
+                      data-active={matches(item, path)}
+                      aria-expanded={openGroup === item.label}
+                      onClick={() => setOpenGroup(openGroup === item.label ? null : item.label)}
+                    >
+                      {item.label}
+                    </button>
+                  )}
                   {openGroup === item.label ? (
                     <div className="nav-menu">
                       {item.links.map((link) => (
@@ -123,7 +136,7 @@ export function SiteHeader({ path }: { path: string }) {
           {nav.map((item) =>
             isGroup(item) ? (
               <div key={item.label} className="drawer-group">
-                <span>{item.label}</span>
+                {item.href ? <NavAnchor href={item.href}>{item.label}</NavAnchor> : <span>{item.label}</span>}
                 {item.links.map((link) => (
                   <NavAnchor key={`${item.label}-${link.label}`} href={link.href}>
                     {link.label}

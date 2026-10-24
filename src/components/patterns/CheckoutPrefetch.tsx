@@ -66,7 +66,7 @@ function WarmFrame({
   return (
     <iframe
       className={`checkout-warm-frame${active ? " is-active" : ""}`}
-      title="Yoga Pod membership checkout"
+      title="yoga pod membership checkout"
       src={src}
       loading="eager"
       onLoad={() => onLoaded(path)}

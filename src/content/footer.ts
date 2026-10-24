@@ -24,10 +24,17 @@ export const footer = {
       links: [
         { href: "/training/", label: "Teacher Training" },
         { href: "/info-sessions/", label: "Info Sessions" },
-        { href: "/faq/", label: "FAQ" },
+        { href: "/faq/", label: "FAQ & Policies" },
         { href: "/help/", label: "Account Help" },
         { href: "/careers/", label: "Careers" },
         { href: "/account-management/", label: "Account Management" },
+      ],
+    },
+    {
+      heading: "Learn about our sister brands",
+      links: [
+        { href: "https://ritualgainesville.com/", label: "RITUAL" },
+        { href: "https://yogapodgainesville.com/", label: "yoga pod" },
       ],
     },
   ],
