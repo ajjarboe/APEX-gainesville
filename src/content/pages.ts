@@ -5,13 +5,13 @@ import { pageMetaSchema } from "@/content/schema";
 export const pages = {
   home: pageMetaSchema.parse({
     path: "/",
-    title: "Gainesville High-Intensity Reformer Pilates Studio | APEX Gainesville",
+    title: "Gainesville High-Intensity Xformer Pilates Studio | APEX Gainesville",
     description:
       "Full body. High intensity. Low impact. Megaformer Pilates and Contemporary Pilates at two Gainesville studios. Try $60 for 8 classes.",
   }),
   theWorkout: pageMetaSchema.parse({
     path: "/the-workout/",
-    title: "APEX Signature Reformer Pilates Classes | APEX Gainesville",
+    title: "APEX Signature Xformer Pilates Classes | APEX Gainesville",
     description:
       "Foundations, APEX 1, APEX 2, and APEX FLEX. Failure-driven Megaformer Pilates designed to work your slow-twitch muscle fibers.",
   }),
