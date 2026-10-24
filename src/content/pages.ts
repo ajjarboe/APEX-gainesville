@@ -7,7 +7,7 @@ export const pages = {
     path: "/",
     title: "Gainesville High-Intensity Xformer Pilates Studio | APEX Gainesville",
     description:
-      "Full body. High intensity. Low impact. Megaformer Pilates and Contemporary Pilates at two Gainesville studios. Try $60 for 8 classes.",
+      "Full body. High intensity. Low impact. Megaformer Pilates and Contemporary Pilates at two Gainesville studios. Try 8 classes for $60.",
   }),
   theWorkout: pageMetaSchema.parse({
     path: "/the-workout/",

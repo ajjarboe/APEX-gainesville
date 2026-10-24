@@ -10,7 +10,7 @@ export const offerings = {
   intro: offeringSchema.parse({
     id: "L1vIdJEGXwriYS0WtLqj",
     price: 60,
-    label: "$60 for 8 Classes in 2 Weeks",
+    label: "8 Classes for $60 in 2 Weeks",
   }),
   monthly4: offeringSchema.parse({
     id: "HDcSJM19Fm23TSOiUGuL",

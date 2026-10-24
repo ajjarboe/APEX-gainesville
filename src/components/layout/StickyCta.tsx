@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { CheckoutLink } from "@/components/patterns/CheckoutLink";
 
 /** Use this for the bar that appears after the hero button scrolls away. */
-export function StickyCta({ label = "Try $60 for 8 classes" }: { label?: string }) {
+export function StickyCta({ label = "Try 8 classes for $60" }: { label?: string }) {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
