@@ -38,13 +38,8 @@ export const ownership = [
   }),
 ];
 
+/** Leadership Team, matching the leadership list on radhq.us. */
 export const directors = [
-  personSchema.parse({
-    photo: "amanda",
-    name: "Amanda Allen",
-    role: "Director of Infrastructure",
-    bio: ["Coming soon"],
-  }),
   personSchema.parse({
     photo: "emily",
     name: "Emily Tharp Pendley",
@@ -56,32 +51,77 @@ export const directors = [
     ],
   }),
   personSchema.parse({
-    photo: "sage",
-    name: "Sage Schaefer",
-    role: "Director of Design",
+    photo: "amanda",
+    name: "Amanda Allen",
+    role: "Program & Facilities Director",
     bio: [
-      "Sage is the Director of Design at APEX | yoga pod and serves as a faculty lead for FIT, HOT, and YIN teacher trainings. She joined the team as a Karma Yogi in 2022 and has steadily progressed into the Leadership team, driven by passion for what we do and who we do it for. In addition to serving our studio community in the front of house and on the mic, Sage holds it down behind-the-scenes as the lead curator of the studio's creative and marketing materials and supports operations through staff training and back-end system development.",
-      "Though Sage loves APEX now, it was certainly not love at first sight — or shake! The level of challenge you face in APEX is unlike anything else, and it definitely took time to get used to. But thanks to the support of our teachers and the consistency of the practice, Sage came to love APEX for not just its physical growth, but mental, as you constantly build and conquer new limits. She is passionate about making APEX accessible and welcoming — yet still challenging — to students of all body types and experience levels.",
-      "Sage fell even deeper in love with the APEX modality when APEX Deep Space was introduced as it blends together her favorite pieces of our pre-existing offerings — the breath-to-movement rhythm of FLOW, the body-to-machine connection of APEX, and the movement-to-beat vibe of FIT. Growing her own physical and mental strength through APEX has already been such a gift; getting to share that excitement with students as an APEX teacher is priceless.",
-      "Outside of the studio, you can find Sage reading a new book, vibing at a concert, playing D&D, or hanging out with her partner and their 3 tabby cats.",
+      "Coming soon",
     ],
-  }),
-  personSchema.parse({
-    photo: "kyle",
-    name: "Kyle Snowden",
-    role: "Regional Assistant Director",
-    bio: ["Coming soon"],
   }),
   personSchema.parse({
     photo: "lindsey",
     name: "Lindsey Guarisco",
-    role: "Regional Assistant Director",
-    bio: ["Coming soon"],
+    role: "Accounts Director",
+    bio: [
+      "Coming soon",
+    ],
   }),
   personSchema.parse({
-    photo: "taylor",
-    name: "Taylor Williams",
+    photo: "ellen-parks",
+    name: "Ellen Parks",
     role: "Regional Assistant Director",
-    bio: ["Coming soon"],
+  }),
+  personSchema.parse({
+    photo: "lindsey-brown",
+    name: "Lindsey Brown",
+    role: "Regional Assistant Director",
+  }),
+  personSchema.parse({
+    photo: "sarah-mcquatters",
+    name: "Sarah McQuatters",
+    role: "Regional Assistant Director + Retail Manager",
+  }),
+  personSchema.parse({
+    photo: "gia-saint-john",
+    name: "Gia Saint John",
+    role: "Marketing Manager",
+  }),
+  personSchema.parse({
+    photo: "patrick-moran",
+    name: "Patrick Moran",
+    role: "Facilities Manager",
+  }),
+  personSchema.parse({
+    photo: "aubrie-harland",
+    name: "Aubrie Harland",
+    role: "Karma Crew Manager",
+  }),
+  personSchema.parse({
+    photo: "audrey-lefler",
+    name: "Audrey Lefler",
+    role: "Karma Crew Manager",
+  }),
+];
+
+/** Teacher training faculty, as on apexjaxbeach.com. */
+export const faculty = [
+  personSchema.parse({
+    photo: "kaleigh",
+    name: "Kaleigh Eadens",
+    role: "APEX Lead Teacher & Teacher Training Faculty",
+    bio: [
+      "Kaleigh has been with APEX as lead teacher and teacher training faculty since its inception in 2020. She also spearheaded and co-created our Deep Space class style. Prior to APEX, she completed her comprehensive Pilates instructor training program and became certified to teach across the full range of Pilates apparatus in 2014. In 2015, she graduated from the Florida School of Massage here in Gainesville and continues to practice bodywork.",
+      "Over her ten years working with human bodies in the capacity of a movement instructor and bodyworker, Kaleigh has developed a strong understanding of and passion for human anatomy and leads the Anatomy portion of our APEX, yoga pod 200hr, HOT, and FIT teacher training programs.",
+      "Her passion for teaching and practicing APEX is rooted in the unique challenge and empowerment the modality offers, and the incredible humans who dedicate themselves to such a rigorous practice within our community. There isn't an APEX style Kaleigh doesn't love to teach, but her favorite is a tie between APEX 2 and Deep Space. When she isn't in the studio, Kaleigh loves spending time with her husband Mitch and their two daughters, Isla and Nico.",
+    ],
+  }),
+  personSchema.parse({
+    photo: "kate",
+    name: "Kate Keskinen",
+    role: "APEX Faculty",
+    bio: [
+      "Kate has been teaching at APEX since 2020 and at our sister studio yoga pod since before the doors opened in 2018. She still remembers her first time on the Xformer: the intensity, the mental challenge, the shake, and how she was instantly hooked. APEX quickly became a cornerstone of her movement practice: powerful, energizing, and seriously fun. She loves how it builds strength and endurance while also providing balance for her gentler movement practices.",
+      "Her favorite style to take and teach is Deep Space: breath-led, mobility-focused, and spacious in a way that feels like medicine. Since joining the APEX program team in summer 2023, Kate has been honored to support fellow teachers and help shape something that continues to evolve and inspire. The APEX community is vibrant and deeply dedicated to hard work, and Kate feels truly lucky to be part of it.",
+    ],
   }),
 ];
