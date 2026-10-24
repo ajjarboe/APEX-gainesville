@@ -56,26 +56,26 @@ export const pricingGroups: Group[] = [
     tiers: [
       {
         key: "infinity4x8",
-        name: "APEX 4 Class + Yoga Pod 8 Class",
+        name: "APEX 4 Class + yoga pod 8 Class",
         term: "per month",
         save: "Save $39/mo",
       },
       {
         key: "infinity8x8",
-        name: "APEX 8 Class + Yoga Pod 8 Class",
+        name: "APEX 8 Class + yoga pod 8 Class",
         term: "per month",
         save: "Save $59/mo",
       },
       {
         key: "infinityUnlimited",
-        name: "APEX Unlimited + Yoga Pod Unlimited",
+        name: "APEX Unlimited + yoga pod Unlimited",
         term: "per month",
         save: "Save $79/mo",
         feature: true,
       },
       {
         key: "infinityAnnual",
-        name: "APEX Unlimited + Yoga Pod Unlimited",
+        name: "APEX Unlimited + yoga pod Unlimited",
         term: "per year",
         save: "Save $629 vs monthly",
       },

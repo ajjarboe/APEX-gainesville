@@ -6,7 +6,7 @@ export const studiosIntro =
 export const studios = [
   studioSchema.parse({
     key: "northwest",
-    name: "APEX | Yoga Pod Northwest",
+    name: "APEX | yoga pod Northwest",
     blurb:
       "At the crossroads of NW 16th Blvd and NW 43rd St, in the Fresh Market shopping center with ample parking.",
     street: "4136 NW 16th Blvd",
@@ -26,7 +26,7 @@ export const studios = [
   }),
   studioSchema.parse({
     key: "southwest",
-    name: "APEX | Yoga Pod Southwest",
+    name: "APEX | yoga pod Southwest",
     blurb:
       "At the crossroads of SW Archer Rd and SW 34th St, in the plaza with Carrabba's Grill and the Enson Market with ample parking.",
     street: "3045 SW 34th St",
