@@ -1,15 +1,11 @@
 export const banner = {
-  label: "RAD app install",
-  storageKey: "apex-radapp-dismissed",
-  title: "**The RAD app is live.** The APEX app no longer works. Same email, new password.",
+  label: "RITUAL is coming",
+  storageKey: "apex-ritual-nw-dismissed",
+  title: "**RITUAL is coming to the NW location.** [Click here](https://ritualgainesville.com/) to see how we are changing the wellness landscape.",
   links: [
     {
-      label: "iPhone app",
-      href: "https://apps.apple.com/us/app/the-rad-collective/id6797615424",
-    },
-    {
-      label: "Android app",
-      href: "https://play.google.com/store/apps/details?id=com.arketa.radcollective",
+      label: "Visit RITUAL",
+      href: "https://ritualgainesville.com/",
     },
   ],
 } as const;

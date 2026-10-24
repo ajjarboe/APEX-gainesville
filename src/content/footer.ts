@@ -30,6 +30,13 @@ export const footer = {
         { href: "/account-management/", label: "Account Management" },
       ],
     },
+    {
+      heading: "Learn about our sister brands",
+      links: [
+        { href: "https://ritualgainesville.com/", label: "RITUAL" },
+        { href: "https://yogapodgainesville.com/", label: "yoga pod" },
+      ],
+    },
   ],
   legal: [{ href: "/privacy-policy/", label: "Privacy Policy" }],
 };
