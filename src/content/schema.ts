@@ -7,6 +7,8 @@ export const navLinkSchema = z.object({
 
 export const navGroupSchema = z.object({
   label: z.string(),
+  /** Optional: clicking the group's own label opens this page; hovering still shows the dropdown. */
+  href: z.string().optional(),
   links: z.array(navLinkSchema),
 });
 
