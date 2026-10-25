@@ -3,8 +3,8 @@ export const site = {
   brand: "APEX Gainesville",
   brandFull: "APEX High Intensity Pilates",
   tagline: "Full body. High intensity. Low impact.",
-  email: "info@yogapod.com",
-  studioEmail: "info.gainesville@yogapod.com",
+  email: "hello@radcollective.us",
+  studioEmail: "hello@radcollective.us",
   social: {
     instagram: "https://www.instagram.com/apexgainesville/",
     facebook: "https://www.facebook.com/apexgainesville/",
