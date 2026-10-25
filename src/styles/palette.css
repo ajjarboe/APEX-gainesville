@@ -10,4 +10,10 @@
   --apex-bone: #f5f2ec;
   --apex-white: #ffffff;
   --apex-sand: #cdc0b1;
+
+  /* Dark mode grounds, deepest to most raised. Blues and bone stay the same in both modes. */
+  --apex-black: #070809; /* hero, footer, dark bands */
+  --apex-night: #0e1113; /* page */
+  --apex-coal: #181c1f; /* raised bands */
+  --apex-graphite: #23292d; /* second raised band */
 }

@@ -23,7 +23,7 @@ export function LocationsPage() {
                 <br />
                 {studio.city}
               </p>
-              <p className="mt-4 text-brand">Book on the schedule →</p>
+              <p className="mt-4 text-brand-text">Book on the schedule →</p>
             </a>
           ))}
           <a
@@ -34,7 +34,7 @@ export function LocationsPage() {
           >
             <h2 className="display-sm">{site.jax.label}</h2>
             <p className="mt-3 text-foreground-soft">Open the Jax Beach APEX site.</p>
-            <p className="mt-4 text-brand">Visit apexjaxbeach.com →</p>
+            <p className="mt-4 text-brand-text">Visit apexjaxbeach.com →</p>
           </a>
         </div>
       </section>
