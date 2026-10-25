@@ -81,8 +81,8 @@
   --pod-on-action: var(--apex-white);
 
   --pod-sand-soft: color-mix(in srgb, var(--apex-sand) 45%, var(--apex-bone));
-  --pod-scrim: color-mix(in srgb, var(--apex-ink) 62%, transparent);
-  --pod-scrim-strong: color-mix(in srgb, var(--apex-ink) 80%, transparent);
+  --pod-scrim: color-mix(in srgb, var(--apex-ink) 35%, transparent);
+  --pod-scrim-strong: color-mix(in srgb, var(--apex-ink) 55%, transparent);
 
   --pod-shadow: 0 14px 40px color-mix(in srgb, var(--apex-ink) 12%, transparent);
   --pod-shadow-lift: 0 22px 60px color-mix(in srgb, var(--apex-ink) 18%, transparent);
