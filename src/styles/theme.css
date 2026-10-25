@@ -62,19 +62,21 @@
 
   --pod-text: var(--apex-ink);
   --pod-text-soft: color-mix(in srgb, var(--apex-ink) 72%, var(--apex-bone));
-  --pod-text-muted: color-mix(in srgb, var(--apex-ink) 52%, var(--apex-bone));
+  --pod-text-muted: color-mix(in srgb, var(--apex-ink) 65%, var(--apex-bone));
   --pod-on-dark: var(--apex-bone);
   --pod-on-dark-soft: color-mix(in srgb, var(--apex-bone) 72%, var(--apex-ink));
+  --pod-on-dark-muted: color-mix(in srgb, var(--apex-bone) 58%, var(--apex-ink));
 
   --pod-rule: color-mix(in srgb, var(--apex-ink) 12%, transparent);
-  --pod-rule-strong: color-mix(in srgb, var(--apex-ink) 22%, transparent);
+  --pod-rule-strong: color-mix(in srgb, var(--apex-ink) 48%, transparent);
   --pod-rule-dark: color-mix(in srgb, var(--apex-bone) 16%, transparent);
 
   --pod-action: var(--apex);
   --pod-action-deep: color-mix(in srgb, var(--apex) 72%, var(--apex-ink));
   --pod-action-soft: color-mix(in srgb, var(--apex) 14%, transparent);
   --pod-action-tint: color-mix(in srgb, var(--apex) 8%, var(--apex-white));
-  --pod-action-text: var(--apex);
+  --pod-action-text: color-mix(in srgb, var(--apex) 85%, var(--apex-ink));
+  --pod-action-on-dark: color-mix(in srgb, var(--apex) 35%, var(--apex-light));
   --pod-action-hover: var(--pod-action-deep);
   --pod-on-action: var(--apex-white);
 
@@ -101,12 +103,12 @@ html[data-theme="dark"] {
   --pod-text-muted: color-mix(in srgb, var(--apex-bone) 58%, var(--apex-night));
 
   --pod-rule: color-mix(in srgb, var(--apex-bone) 12%, transparent);
-  --pod-rule-strong: color-mix(in srgb, var(--apex-bone) 38%, transparent);
+  --pod-rule-strong: color-mix(in srgb, var(--apex-bone) 42%, transparent);
 
   --pod-action-deep: var(--apex-light);
   --pod-action-soft: color-mix(in srgb, var(--apex) 24%, transparent);
   --pod-action-tint: color-mix(in srgb, var(--apex) 18%, var(--apex-night));
-  --pod-action-text: color-mix(in srgb, var(--apex) 35%, var(--apex-light));
+  --pod-action-text: var(--pod-action-on-dark);
   --pod-action-hover: color-mix(in srgb, var(--apex) 82%, var(--apex-black));
 
   --pod-sand-soft: color-mix(in srgb, var(--apex-sand) 30%, var(--apex-coal));
@@ -130,6 +132,7 @@ html[data-theme="dark"] {
   --muted: var(--pod-text-muted);
   --on-dark: var(--pod-on-dark);
   --on-dark-soft: var(--pod-on-dark-soft);
+  --on-dark-muted: var(--pod-on-dark-muted);
 
   --border: var(--pod-rule);
   --border-strong: var(--pod-rule-strong);
@@ -140,6 +143,7 @@ html[data-theme="dark"] {
   --brand-soft: var(--pod-action-soft);
   --brand-tint: var(--pod-action-tint);
   --brand-text: var(--pod-action-text);
+  --brand-on-dark: var(--pod-action-on-dark);
   --brand-hover: var(--pod-action-hover);
   --on-brand: var(--pod-on-action);
 
@@ -181,6 +185,7 @@ html[data-theme="dark"] {
   --color-muted: var(--muted);
   --color-on-dark: var(--on-dark);
   --color-on-dark-soft: var(--on-dark-soft);
+  --color-on-dark-muted: var(--on-dark-muted);
 
   --color-border: var(--border);
   --color-border-strong: var(--border-strong);
@@ -191,6 +196,7 @@ html[data-theme="dark"] {
   --color-brand-soft: var(--brand-soft);
   --color-brand-tint: var(--brand-tint);
   --color-brand-text: var(--brand-text);
+  --color-brand-on-dark: var(--brand-on-dark);
   --color-on-brand: var(--on-brand);
 
   --color-sand: var(--sand);
@@ -680,7 +686,7 @@ html[data-theme="dark"] {
   color: var(--on-dark);
 }
 .rbanner-line strong {
-  color: var(--brand-text);
+  color: var(--brand-on-dark);
   font-weight: 600;
   letter-spacing: 0.04em;
 }
@@ -696,7 +702,7 @@ html[data-theme="dark"] {
   font-weight: 600;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: var(--brand-text);
+  color: var(--brand-on-dark);
   background: transparent;
   border: 2px solid var(--brand);
   padding: 0.45em 15px;
@@ -1114,7 +1120,7 @@ video.hero-media {
   color: var(--on-dark-soft);
 }
 .foot a:hover {
-  color: var(--brand-text);
+  color: var(--brand-on-dark);
 }
 .foot-grid {
   display: grid;
@@ -1137,7 +1143,7 @@ video.hero-media {
   padding-top: 1.75rem;
   border-top: 1px solid var(--border-dark);
   font-size: 0.8125rem;
-  color: var(--muted);
+  color: var(--on-dark-muted);
 }
 .foot-subscribe input {
   width: 100%;
