@@ -101,7 +101,7 @@ html[data-theme="dark"] {
   --pod-text-muted: color-mix(in srgb, var(--apex-bone) 58%, var(--apex-night));
 
   --pod-rule: color-mix(in srgb, var(--apex-bone) 12%, transparent);
-  --pod-rule-strong: color-mix(in srgb, var(--apex-bone) 24%, transparent);
+  --pod-rule-strong: color-mix(in srgb, var(--apex-bone) 38%, transparent);
 
   --pod-action-deep: var(--apex-light);
   --pod-action-soft: color-mix(in srgb, var(--apex) 24%, transparent);
