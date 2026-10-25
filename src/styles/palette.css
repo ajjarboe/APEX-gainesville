@@ -7,9 +7,9 @@
   --apex-light: #65b4af;
 
   --apex-ink: #14181a;
-  --apex-bone: #fdfcfa;
+  --apex-bone: #ffffff;
   --apex-white: #ffffff;
-  --apex-sand: #faf9f6;
+  --apex-sand: #ffffff;
 
   /* Dark mode grounds, deepest to most raised. Blues and bone stay the same in both modes. */
   --apex-black: #070809; /* hero, footer, dark bands */
