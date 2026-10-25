@@ -3,8 +3,8 @@
    Neutrals are this site's paper and ink. Nowhere else in this repo may contain a hex.
    Mix in theme.css. */
 :root {
-  --apex: #1a7a6e;
-  --apex-light: #5fc9b5;
+  --apex: #128b84;
+  --apex-light: #65b4af;
 
   --apex-ink: #14181a;
   --apex-bone: #fdfcfa;
