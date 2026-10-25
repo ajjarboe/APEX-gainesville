@@ -3,13 +3,13 @@
    Neutrals are this site's paper and ink. Nowhere else in this repo may contain a hex.
    Mix in theme.css. */
 :root {
-  --apex: #2f6feb;
-  --apex-light: #8fb4ff;
+  --apex: #128b84;
+  --apex-light: #65b4af;
 
   --apex-ink: #14181a;
-  --apex-bone: #f5f2ec;
+  --apex-bone: #ffffff;
   --apex-white: #ffffff;
-  --apex-sand: #cdc0b1;
+  --apex-sand: #ffffff;
 
   /* Dark mode grounds, deepest to most raised. Blues and bone stay the same in both modes. */
   --apex-black: #070809; /* hero, footer, dark bands */

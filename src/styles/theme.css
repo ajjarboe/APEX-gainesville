@@ -14,6 +14,14 @@
   font-style: normal;
   font-display: swap;
 }
+/* Header colors: black bar, white links */
+.head.head { background: var(--apex-black); }
+.head .nav-link { color: var(--apex-white); }
+.head .nav-link:hover, .head .nav-link[data-active="true"] { color: var(--apex-light); }
+.head .mode-toggle, .head .burger { color: var(--apex-white); border-color: var(--apex-white); }
+.head .head-logo .logo-on-light { display: none; }
+.head .head-logo .logo-on-dark { display: block; }
+
 @font-face {
   font-family: "Oswald";
   src: url("/fonts/oswald-600.woff2") format("woff2");
@@ -81,8 +89,8 @@
   --pod-on-action: var(--apex-white);
 
   --pod-sand-soft: color-mix(in srgb, var(--apex-sand) 45%, var(--apex-bone));
-  --pod-scrim: color-mix(in srgb, var(--apex-ink) 62%, transparent);
-  --pod-scrim-strong: color-mix(in srgb, var(--apex-ink) 80%, transparent);
+  --pod-scrim: color-mix(in srgb, var(--apex-ink) 35%, transparent);
+  --pod-scrim-strong: color-mix(in srgb, var(--apex-ink) 55%, transparent);
 
   --pod-shadow: 0 14px 40px color-mix(in srgb, var(--apex-ink) 12%, transparent);
   --pod-shadow-lift: 0 22px 60px color-mix(in srgb, var(--apex-ink) 18%, transparent);
