@@ -22,14 +22,17 @@ export const home = {
   },
   appCard: {
     title: "Download the RAD App",
-    body: "Your one stop to book APEX, RITUAL, and yoga pod. Book sessions, view brands, and filter locations without ever logging out.",
-    note: "Your email is the same for all brands. Tap “Forgot Password” if you need a reminder.",
+    body: "Book & manage your account for APEX, RITUAL, and yoga pod.",
+    note: "Same email for all brands. Tap “Forgot Password” to reset.",
   },
   bookCard: {
     title: "Book this week",
-    body: "One schedule for Northwest and Southwest.",
-    scheduleLabel: "APEX Gainesville Schedule",
-    callLabels: { northwest: "Call NW", southwest: "Call SW" },
+    body: "View the schedule for Northwest and Southwest APEX. Having difficulty booking a class or using your credits? Call or text us. We're here to help.",
+    scheduleLabel: "View APEX Gainesville Schedule",
+    contactLabels: {
+      northwest: { text: "Text Northwest", call: "Call Northwest" },
+      southwest: { text: "Text Southwest", call: "Call Southwest" },
+    },
   },
   testimonialsTitle: "What Our Students Say",
   tilesTitle: "Inside Our Studios",

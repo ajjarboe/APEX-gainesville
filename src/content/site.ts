@@ -25,7 +25,7 @@ export const site = {
     androidNote: "Same email as APEX. Tap Forgot Password to set a new one.",
     links: [
       { label: "Download on the App Store", href: "https://apps.apple.com/us/app/rad-collective/id6797615424" },
-      { label: "Get it on Google Play", href: "https://play.google.com/store/apps/details?id=com.arketa.radcollective" },
+      { label: "Download on Google Play", href: "https://play.google.com/store/apps/details?id=com.arketa.radcollective" },
     ],
   },
 } as const;

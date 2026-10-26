@@ -53,6 +53,7 @@ export function HomePage() {
 
       <section className="band">
         <div className="shell">
+          <div className="outline-frame">
           <Carousel title={home.testimonialsTitle} label="reviews">
             {home.testimonials.map((item) => (
               <blockquote key={item.name} className="quote carousel-card">
@@ -61,6 +62,7 @@ export function HomePage() {
               </blockquote>
             ))}
           </Carousel>
+          </div>
         </div>
       </section>
 
@@ -100,20 +102,23 @@ export function HomePage() {
           <div className="card-dark flex flex-col justify-between gap-6">
             <h3 className="display-md">{home.bookCard.title}</h3>
             <p className="text-on-dark-soft">{home.bookCard.body}</p>
-            <div className="pill-row">
-              <a className="btn btn-ghost" href="/schedule/">
+            <div className="flex flex-col gap-3">
+              <a className="btn btn-ghost w-full" href="/schedule/">
                 {home.bookCard.scheduleLabel}
               </a>
-              {studios.map((studio) => (
-                <a
-                  key={studio.key}
-                  className="btn btn-ghost"
-                  href={`tel:${studio.phoneRaw}`}
-                  aria-label={`${home.bookCard.callLabels[studio.key as keyof typeof home.bookCard.callLabels]} ${studio.phoneDisplay}`}
-                >
-                  {home.bookCard.callLabels[studio.key as keyof typeof home.bookCard.callLabels]}
-                </a>
-              ))}
+              {studios.map((studio) => {
+                const labels = home.bookCard.contactLabels[studio.key as keyof typeof home.bookCard.contactLabels];
+                return (
+                  <div key={studio.key} className="btn-pair">
+                    <a className="btn btn-ghost" href={`sms:${studio.phoneRaw}`} aria-label={`${labels.text} ${studio.phoneDisplay}`}>
+                      {labels.text}
+                    </a>
+                    <a className="btn btn-ghost" href={`tel:${studio.phoneRaw}`} aria-label={`${labels.call} ${studio.phoneDisplay}`}>
+                      {labels.call}
+                    </a>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
