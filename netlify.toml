@@ -49,6 +49,11 @@
   status = 301
 
 [[redirects]]
+  from = "/info-sessions/*"
+  to = "/training/"
+  status = 301
+
+[[redirects]]
   from = "/teacher-form"
   to = "/training/"
   status = 301

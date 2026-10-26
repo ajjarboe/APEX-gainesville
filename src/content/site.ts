@@ -3,8 +3,8 @@ export const site = {
   brand: "APEX Gainesville",
   brandFull: "APEX High Intensity Pilates",
   tagline: "Full body. High intensity. Low impact.",
-  email: "info@yogapod.com",
-  studioEmail: "info.gainesville@yogapod.com",
+  email: "hello@radcollective.us",
+  studioEmail: "hello@radcollective.us",
   social: {
     instagram: "https://www.instagram.com/apexgainesville/",
     facebook: "https://www.facebook.com/apexgainesville/",
@@ -23,5 +23,9 @@ export const site = {
     blurb:
       "One app for APEX, RITUAL and yoga pod. Book classes, manage your account, and switch between studios without ever logging out.",
     androidNote: "Same email as APEX. Tap Forgot Password to set a new one.",
+    links: [
+      { label: "Download on the App Store", href: "https://apps.apple.com/us/app/rad-collective/id6797615424" },
+      { label: "Get it on Google Play", href: "https://play.google.com/store/apps/details?id=com.arketa.radcollective" },
+    ],
   },
 } as const;

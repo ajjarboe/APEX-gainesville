@@ -31,10 +31,7 @@ export const nav = [
   navLinkSchema.parse({ href: "/schedule/", label: "Schedule" }),
   navLinkSchema.parse({ href: "/the-machine/", label: "The Machine" }),
   navLinkSchema.parse({ href: "/pricing/", label: "Pricing" }),
-  navGroupSchema.parse({
-    label: "Education",
-    links: [{ href: "/training/", label: "Teacher Training" }],
-  }),
+  navLinkSchema.parse({ href: "/training/", label: "Teacher Training" }),
 ];
 
 export const headerCta = { href: "/schedule/", label: "Book Now" };

@@ -8,15 +8,11 @@ export function TrainingPage() {
   return (
     <SiteChrome path={pages.training.path}>
       <PageHeader
-        eyebrow={teacherTraining.hero.eyebrow}
         title={teacherTraining.hero.title}
         lede={teacherTraining.hero.lede}
       >
         <a className="btn btn-primary" href={teacherTraining.contact.href}>
           {teacherTraining.contact.label}
-        </a>
-        <a className="btn btn-ghost" href="/info-sessions/">
-          Info sessions
         </a>
       </PageHeader>
 

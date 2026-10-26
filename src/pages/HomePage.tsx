@@ -3,7 +3,6 @@ import { CheckoutLink } from "@/components/patterns/CheckoutLink";
 import { JsonLd, gymSchema, websiteSchema } from "@/components/patterns/JsonLd";
 import { Photo } from "@/components/patterns/Photo";
 import { VideoBackdrop } from "@/components/patterns/VideoBackdrop";
-import { banner } from "@/content/banner";
 import { home } from "@/content/home";
 import { pages } from "@/content/pages";
 import { site } from "@/content/site";
@@ -114,7 +113,7 @@ export function HomePage() {
             <p className="lede mt-5">{site.app.blurb}</p>
             <p className="mt-4 text-on-dark-soft">{site.app.androidNote}</p>
             <div className="mt-6 flex flex-wrap gap-4">
-              {banner.links.map((link) => (
+              {site.app.links.map((link) => (
                 <a key={link.label} className="btn btn-ghost" href={link.href} target="_blank" rel="noopener">
                   {link.label}
                 </a>
