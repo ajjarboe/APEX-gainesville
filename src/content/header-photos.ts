@@ -56,6 +56,7 @@ export const headerPhotos = {
     widths: [640, 1100, 1800],
     width: 1800,
     height: 1012,
+    focus: "lower",
   },
   training: {
     src: "/img/training-class",
