@@ -45,10 +45,11 @@ export const headerPhotos = {
     height: 1012,
   },
   training: {
-    src: "/img/training-group",
-    alt: "A smiling group of APEX teachers and trainees together in the studio",
+    src: "/img/training-class",
+    alt: "A smiling APEX teacher cueing a student on the Xformer as classmates laugh along",
     widths: [640, 1100, 1800],
     width: 1800,
-    height: 752,
+    height: 1350,
+    focus: "upper",
   },
 } satisfies Record<string, HeaderPhoto>;
