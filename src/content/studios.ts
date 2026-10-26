@@ -1,7 +1,7 @@
 import { studioSchema } from "@/content/schema";
 
 export const studiosIntro =
-  "APEX is now available at both of our Gainesville locations. Our studios are designed with your health, safety, and comfort first. The latest medical-grade air filtration system, multi-colored lighting, top of the line machines, modern sound systems, and spa-like locker rooms including showers deliver on everything you have been searching for in your fitness experience. APEX | High-Intensity Pilates is the premier Megaformer fitness studio in north Florida.";
+  "APEX is now available at both of our Gainesville locations. Our studios are designed with your health, safety, and comfort first. The latest medical-grade air filtration system, multi-colored lighting, top-of-the-line machines, modern sound systems, and spa-like locker rooms including showers deliver on everything you have been searching for in your fitness experience. APEX | High-Intensity Pilates is the premier Megaformer fitness studio in North Florida.";
 
 export const studios = [
   studioSchema.parse({
@@ -21,7 +21,7 @@ export const studios = [
       { days: "Sun", time: "8:30am – 6:30pm" },
     ],
     schedulePath: "/schedule/",
-    mapQuery: "4136+NW+16th+Blvd,+Gainesville,+FL+32605",
+    mapQuery: "APEX+NW+High-Intensity+Pilates,+4136+NW+16th+Blvd,+Gainesville,+FL+32605",
     photo: "nw",
   }),
   studioSchema.parse({
@@ -41,7 +41,7 @@ export const studios = [
       { days: "Sun", time: "9am – 6pm" },
     ],
     schedulePath: "/schedule/",
-    mapQuery: "3045+SW+34th+St,+Gainesville,+FL+32608",
+    mapQuery: "Yoga+Pod+SW,+3045+SW+34th+St+Unit+24,+Gainesville,+FL+32608",
     photo: "sw",
   }),
 ];

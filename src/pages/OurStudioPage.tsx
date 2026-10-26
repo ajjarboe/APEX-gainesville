@@ -10,8 +10,13 @@ export function OurStudioPage() {
   return (
     <SiteChrome path={pages.ourStudio.path}>
       <JsonLd data={[...gymSchema(), breadcrumbSchema("Our Studios", pages.ourStudio.path)]} />
-      <PageHeader
-        photo={headerPhotos.ourStudio} title="Our Studios" lede={studiosIntro} />
+      <PageHeader photo={headerPhotos.ourStudio} title="Our Studios" />
+
+      <section className="band band-warm">
+        <div className="shell-narrow text-center">
+          <p className="lede mx-auto">{studiosIntro}</p>
+        </div>
+      </section>
 
       <section className="band">
         <div className="shell grid-2">
@@ -35,12 +40,6 @@ export function OurStudioPage() {
                 {studio.city}
               </p>
 
-              <p className="mt-4">
-                <a className="text-brand-text underline" href={`tel:${studio.phoneRaw}`}>
-                  Call or text {studio.phoneDisplay}
-                </a>
-              </p>
-
               <dl className="mt-6 grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
                 {studio.hours.map((slot) => (
                   <div key={slot.days} className="contents">
@@ -51,11 +50,20 @@ export function OurStudioPage() {
               </dl>
 
               <div className="mt-8 flex flex-wrap gap-4">
+                <a className="btn btn-primary" href={`tel:${studio.phoneRaw}`}>
+                  Call {studio.key === "northwest" ? "Northwest" : "Southwest"}
+                </a>
+                <a className="btn btn-primary" href={`sms:${studio.phoneRaw}`}>
+                  Text {studio.key === "northwest" ? "Northwest" : "Southwest"}
+                </a>
+              </div>
+
+              <div className="mt-4 flex flex-wrap gap-4">
                 <a className="btn btn-primary" href={studio.schedulePath}>
                   See the schedule
                 </a>
                 <a
-                  className="btn btn-ghost"
+                  className="btn btn-primary"
                   href={`https://www.google.com/maps/search/?api=1&query=${studio.mapQuery}`}
                   target="_blank"
                   rel="noopener"
