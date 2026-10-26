@@ -21,7 +21,7 @@ export const studios = [
       { days: "Sun", time: "8:30am – 6:30pm" },
     ],
     schedulePath: "/schedule/",
-    mapQuery: "4136+NW+16th+Blvd,+Gainesville,+FL+32605",
+    mapQuery: "APEX+NW+High-Intensity+Pilates,+4136+NW+16th+Blvd,+Gainesville,+FL+32605",
     photo: "nw",
   }),
   studioSchema.parse({
@@ -41,7 +41,7 @@ export const studios = [
       { days: "Sun", time: "9am – 6pm" },
     ],
     schedulePath: "/schedule/",
-    mapQuery: "3045+SW+34th+St,+Gainesville,+FL+32608",
+    mapQuery: "Yoga+Pod+SW,+3045+SW+34th+St+Unit+24,+Gainesville,+FL+32608",
     photo: "sw",
   }),
 ];
