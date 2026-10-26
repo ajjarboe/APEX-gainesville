@@ -21,7 +21,6 @@ type Group = {
 
 export const pricingHeader = {
   title: "Memberships & Class Packs",
-  lede: "Try our new student APEX Intro Offer for $60. Scale up based on your practice needs.",
 };
 
 export const pricingNote =

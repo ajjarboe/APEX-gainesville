@@ -9,11 +9,7 @@ export function PricingPage() {
   return (
     <SiteChrome path={pages.pricing.path}>
       <JsonLd data={[...gymSchema(), breadcrumbSchema("Pricing", pages.pricing.path)]} />
-      <PageHeader
-        eyebrow="Pricing"
-        title={pricingHeader.title}
-        lede={pricingHeader.lede}
-      />
+      <PageHeader eyebrow="Pricing" title={pricingHeader.title} />
 
       {pricingGroups.map((group, index) => (
         <section
