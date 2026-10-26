@@ -16,7 +16,6 @@ export const headerPhotos = {
     widths: [640, 1100, 1800],
     width: 1800,
     height: 1200,
-
     tall: true,
   },
   deepSpace: {
