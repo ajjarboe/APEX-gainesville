@@ -11,7 +11,13 @@ export const headerPhotos = {
     width: 1200,
     height: 668,
   },
-  theWorkout: { src: "/img/tile-1", alt: "Two students mid-lunge in an APEX class", ...square },
+  theWorkout: {
+    src: "/img/workout-jax",
+    alt: "A row of APEX Xformer machines in the studio",
+    widths: [640, 1100, 1800],
+    width: 1800,
+    height: 1200,
+  },
   deepSpace: { src: "/img/nw", alt: "A student stretching on the machine at APEX Northwest", ...square },
   ourStudio: {
     src: "/img/hero",
