@@ -23,8 +23,7 @@ export const nav = [
     label: "Locations",
     href: "/locations/",
     links: [
-      { href: "/schedule/", label: "Gainesville NW" },
-      { href: "/schedule/", label: "Gainesville SW" },
+      { href: "/schedule/", label: "Gainesville" },
       { href: site.jax.href, label: site.jax.label },
     ],
   }),
