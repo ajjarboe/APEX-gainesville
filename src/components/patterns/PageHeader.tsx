@@ -15,6 +15,8 @@ export type HeaderPhoto = {
    * "top" pins the very top edge: use this when people fill the frame and heads sit near the top.
    */
   focus?: "upper" | "top";
+  /** A taller banner for group photos, so every row of faces stays in view on wide screens. */
+  tall?: boolean;
 };
 
 /**
@@ -49,7 +51,7 @@ export function PageHeader({
 
   if (photo) {
     return (
-      <section className="page-photo">
+      <section className={photo.tall ? "page-photo page-photo-tall" : "page-photo"}>
         <Photo
           src={photo.src}
           alt={photo.alt}
