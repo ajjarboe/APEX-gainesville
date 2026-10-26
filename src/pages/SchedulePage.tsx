@@ -4,7 +4,6 @@ import { PageHeader } from "@/components/patterns/PageHeader";
 import { headerPhotos } from "@/content/header-photos";
 import { scheduleSrc } from "@/content/checkout";
 import { pages } from "@/content/pages";
-import { site } from "@/content/site";
 import { studios } from "@/content/studios";
 
 export function SchedulePage() {
@@ -14,7 +13,7 @@ export function SchedulePage() {
 
       <section className="band band-tight">
         <div className="shell">
-          <h2 className="display-md">Need help booking?</h2>
+          <h2 className="display-md">Need help?</h2>
           <div className="mt-5 flex flex-wrap gap-3">
             {studios.map((studio) => (
               <a key={studio.key} className="btn btn-primary" href={`tel:${studio.phoneRaw}`}>
@@ -22,8 +21,7 @@ export function SchedulePage() {
               </a>
             ))}
           </div>
-          <p className="mt-8 text-right text-sm text-muted">{site.app.androidNote}</p>
-          <div className="mt-6">
+          <div className="mt-8">
             <BookingFrame src={scheduleSrc()} title="APEX Gainesville class schedule" priority />
           </div>
         </div>
