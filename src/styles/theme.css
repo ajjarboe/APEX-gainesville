@@ -920,6 +920,27 @@ video.hero-media {
   }
 }
 
+/* Use this when two short buttons sit side by side as a pair, half width each,
+   lined up under one full-width button (e.g. Text / Call a studio). Stays two-up on phones. */
+.btn-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+.btn-pair .btn {
+  padding: 0.8rem 0.6rem;
+  font-size: 0.8125rem;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+/* Use this to set a section apart from the content above it with a light teal outline. */
+.outline-frame {
+  border: 2px solid var(--apex-light);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
 .grid-auto {
   display: grid;
   gap: 1.5rem;
