@@ -1,8 +1,5 @@
 import { personSchema } from "@/content/schema";
 
-/** The line under "Our Team" in the photo header. */
-export const mission = "Inspire Joy";
-
 export const story = {
   title: "Our Story",
   paragraphs: [

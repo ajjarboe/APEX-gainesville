@@ -9,11 +9,11 @@ export function TheWorkoutPage() {
   return (
     <SiteChrome path={pages.theWorkout.path}>
       <PageHeader
-        photo={headerPhotos.theWorkout} title="APEX Signature Pilates" lede={classesIntro[0]} />
+        photo={headerPhotos.theWorkout} title="APEX Signature Pilates" />
 
       <section className="band">
         <div className="shell-narrow">
-          <p className="text-foreground-soft">{classesIntro[1]}</p>
+          <p className="text-foreground-soft">{classesIntro[0]}</p>
           <div className="mt-10">
             {classStyles.map((style) => (
               <Disclose

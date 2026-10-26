@@ -11,7 +11,6 @@ export function TheMachinePage() {
       <PageHeader
         photo={headerPhotos.theMachine}
         title={theMachine.hero.title}
-        lede={theMachine.hero.lede}
       />
 
       <section className="band">
