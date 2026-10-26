@@ -7,6 +7,8 @@ type Tier = {
   term: string;
   save?: string;
   feature?: boolean;
+  /** Button words. Defaults to "Get started". */
+  cta?: string;
 };
 
 type Group = {
@@ -20,8 +22,13 @@ type Group = {
 export const pricingNote =
   "All purchases are final. No refunds are available for drop-ins, class packs, or memberships.";
 
+export const pricingHeader = {
+  title: "Memberships & Class Packs",
+  lede: "Start with 8 classes for $60. Stay for whichever membership matches how you actually train.",
+};
+
 const CANCELLATION =
-  "30 day cancellation notice required on all monthly & annual memberships. Monthly membership is a 2 month minimum.";
+  "Use them or lose them: monthly classes do not roll over. 30-day cancellation notice required. 2-month minimum on monthly memberships.";
 
 export const pricingGroups: Group[] = [
   {
@@ -34,6 +41,7 @@ export const pricingGroups: Group[] = [
         name: "8 Classes in 2 Weeks",
         term: "one time",
         feature: true,
+        cta: "$60 Intro Offer",
       },
     ],
     note: "Intro offers are a 1-time special per person. Staff will reach out to secure an alternate package if more than 1 intro is purchased.",
@@ -80,7 +88,7 @@ export const pricingGroups: Group[] = [
         save: "Save $629 vs monthly",
       },
     ],
-    note: CANCELLATION,
+    note: "Same cancellation terms as Autopay Memberships above.",
   },
   {
     id: "packs",
@@ -90,6 +98,6 @@ export const pricingGroups: Group[] = [
       { key: "pack5", name: "5 Class Pack", term: "5 classes" },
       { key: "pack10", name: "10 Class Pack", term: "10 classes" },
     ],
-    note: "Class packs never expire and cannot be shared.",
+    note: "Class packs never expire & cannot be shared.",
   },
 ];

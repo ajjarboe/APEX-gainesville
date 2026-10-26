@@ -3,13 +3,13 @@ import { JsonLd, breadcrumbSchema, gymSchema } from "@/components/patterns/JsonL
 import { Photo } from "@/components/patterns/Photo";
 import { PageHeader } from "@/components/patterns/PageHeader";
 import { pages } from "@/content/pages";
-import { studios, studiosIntro } from "@/content/studios";
+import { directionsUrl, locationButtons, studios, studiosIntro } from "@/content/studios";
 
 export function OurStudioPage() {
   return (
     <SiteChrome path={pages.ourStudio.path}>
       <JsonLd data={[...gymSchema(), breadcrumbSchema("Our Studios", pages.ourStudio.path)]} />
-      <PageHeader eyebrow="About" title="Our Studios" lede={studiosIntro} />
+      <PageHeader title="Our Studios" lede={studiosIntro} />
 
       <section className="band">
         <div className="shell grid-2">
@@ -54,11 +54,11 @@ export function OurStudioPage() {
                 </a>
                 <a
                   className="btn btn-ghost"
-                  href={`https://www.google.com/maps/search/?api=1&query=${studio.mapQuery}`}
+                  href={directionsUrl(studio.mapQuery)}
                   target="_blank"
                   rel="noopener"
                 >
-                  Directions
+                  {locationButtons.directions}
                 </a>
               </div>
             </div>

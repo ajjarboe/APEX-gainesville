@@ -3,6 +3,17 @@ import { studioSchema } from "@/content/schema";
 export const studiosIntro =
   "APEX is now available at both of our Gainesville locations. Our studios are designed with your health, safety, and comfort first. The latest medical-grade air filtration system, multi-colored lighting, top of the line machines, modern sound systems, and spa-like locker rooms including showers deliver on everything you have been searching for in your fitness experience. APEX | High-Intensity Pilates is the premier Megaformer fitness studio in north Florida.";
 
+/** Locations page: button labels under each studio card. */
+export const locationButtons = {
+  book: "Book on the schedule",
+  directions: "Get directions",
+  jax: "Visit apexjaxbeach.com",
+};
+
+/** Opens Google Maps with driving directions to a studio from wherever the person is. */
+export const directionsUrl = (mapQuery: string) =>
+  `https://www.google.com/maps/dir/?api=1&destination=${mapQuery}`;
+
 export const studios = [
   studioSchema.parse({
     key: "northwest",

@@ -38,13 +38,7 @@ export function Disclose({
           </p>
         ))}
         {meta?.length ? (
-          <div className="meta-row">
-            {meta.map((item) => (
-              <span key={item} className="chip">
-                {item}
-              </span>
-            ))}
-          </div>
+          <p className="meta-text">{meta.join(" · ")}</p>
         ) : null}
       </div>
     </details>

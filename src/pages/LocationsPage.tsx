@@ -2,13 +2,12 @@ import { SiteChrome } from "@/components/layout/SiteChrome";
 import { PageHeader } from "@/components/patterns/PageHeader";
 import { pages } from "@/content/pages";
 import { site } from "@/content/site";
-import { studios } from "@/content/studios";
+import { directionsUrl, locationButtons, studios } from "@/content/studios";
 
 export function LocationsPage() {
   return (
     <SiteChrome path={pages.locations.path}>
       <PageHeader
-        eyebrow="Locations"
         title="Which location?"
         lede="Both Gainesville studios share one schedule. Jax Beach has its own site."
       />
@@ -16,26 +15,37 @@ export function LocationsPage() {
       <section className="band">
         <div className="shell grid-auto">
           {studios.map((studio) => (
-            <a key={studio.key} className="card-flat block no-underline" href="/schedule/">
+            <div key={studio.key} className="card-flat">
               <h2 className="display-sm">{studio.name}</h2>
               <p className="mt-3 text-foreground-soft">
                 {studio.street}
                 <br />
                 {studio.city}
               </p>
-              <p className="mt-4 text-brand-text">Book on the schedule →</p>
-            </a>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <a className="btn btn-primary" href={studio.schedulePath}>
+                  {locationButtons.book}
+                </a>
+                <a
+                  className="btn btn-ghost"
+                  href={directionsUrl(studio.mapQuery)}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {locationButtons.directions}
+                </a>
+              </div>
+            </div>
           ))}
-          <a
-            className="card-flat block no-underline"
-            href={site.jax.href}
-            target="_blank"
-            rel="noopener"
-          >
+          <div className="card-flat">
             <h2 className="display-sm">{site.jax.label}</h2>
             <p className="mt-3 text-foreground-soft">Open the Jax Beach APEX site.</p>
-            <p className="mt-4 text-brand-text">Visit apexjaxbeach.com →</p>
-          </a>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a className="btn btn-primary" href={site.jax.href} target="_blank" rel="noopener">
+                {locationButtons.jax}
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </SiteChrome>
