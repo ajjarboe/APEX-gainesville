@@ -14,8 +14,8 @@ type Group = {
   id: string;
   title: string;
   lede?: string;
-  /** Fine print shown right under the section title. */
-  note?: string;
+  /** Fine print shown right under the section title. Each line in the list gets its own line on the page. */
+  note?: string[];
   tiers: Tier[];
 };
 
@@ -27,15 +27,13 @@ export const pricingHeader = {
 export const pricingNote =
   "All purchases are final. No refunds are available for drop-ins, class packs, or memberships.";
 
-const CANCELLATION =
-  "30-day cancellation notice required on all monthly memberships. Monthly membership is a 2-month minimum.";
+const CANCELLATION = "30 days' notice required to cancel monthly memberships.";
 
 export const pricingGroups: Group[] = [
   {
     id: "intro",
     title: "Intro Offer",
-    lede: "No contract. No strings attached. Your 2 weeks start with your first class.",
-    note: "Intro offers are a 1-time special per person. Staff will reach out to secure an alternate package if more than 1 intro is purchased.",
+    lede: "No contract. 2 weeks starts on your first class.",
     tiers: [
       {
         key: "intro",
@@ -48,7 +46,7 @@ export const pricingGroups: Group[] = [
   {
     id: "membership",
     title: "Autopay Memberships",
-    note: CANCELLATION,
+    note: [CANCELLATION],
     tiers: [
       { key: "monthly4", name: "4 classes a month", term: "per month" },
       { key: "monthly8", name: "8 classes a month", term: "per month" },
@@ -58,9 +56,8 @@ export const pricingGroups: Group[] = [
   },
   {
     id: "infinity",
-    title: "Infinity Membership",
-    lede: "One membership for APEX and yoga pod. Choose the tier that's right for your practice.",
-    note: `${CANCELLATION} Class allotments do not roll over monthly. Use them or lose them.`,
+    title: "Infinity Memberships",
+    note: [CANCELLATION, "Class allotments don't roll over."],
     tiers: [
       {
         key: "infinity4x8",
@@ -92,7 +89,7 @@ export const pricingGroups: Group[] = [
   {
     id: "packs",
     title: "Limited Class Options",
-    note: "Class packs never expire & cannot be shared.",
+    note: ["Class packs never expire & cannot be shared."],
     tiers: [
       { key: "dropIn", name: "Drop In Class", term: "per class" },
       { key: "pack5", name: "5 Class Pack", term: "per pack" },

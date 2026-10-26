@@ -24,8 +24,16 @@ export function PricingPage() {
           <div className="shell">
             <h2 className="display-md">{group.title}</h2>
             {group.lede ? <p className="lede mt-5">{group.lede}</p> : null}
-            {group.note ? <p className="price-note mt-4">{group.note}</p> : null}
-            <div className="grid-auto mt-10">
+            {group.note ? (
+              <div className="mt-4">
+                {group.note.map((line) => (
+                  <p key={line} className="price-note">
+                    {line}
+                  </p>
+                ))}
+              </div>
+            ) : null}
+            <div className="grid-auto mt-8">
               {group.tiers.map((tier) => (
                 <PriceCard
                   key={tier.key}
