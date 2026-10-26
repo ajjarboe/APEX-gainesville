@@ -10,7 +10,6 @@ export function DeepSpacePage() {
       <PageHeader
         photo={headerPhotos.deepSpace}
         title={deepSpace.hero.title}
-        lede={deepSpace.hero.lede}
       />
 
       <section className="band">

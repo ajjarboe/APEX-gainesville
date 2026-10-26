@@ -1,7 +1,6 @@
 import { classStyleSchema } from "@/content/schema";
 
 export const classesIntro = [
-  "Precision. Power. Resistance. Results.",
   "APEX is unlike any exercise class you've been to before. Heart-pumping, body-toning, and failure-driven, APEX will elevate your physical conditioning to its highest point. Classes are designed to work your slow-twitch muscle fibers while staying in time under tension with customizable spring loads for every exercise. It can take 3 classes to 3 months to understand the method, exercises, and transitions, so stay with it to achieve mind-blowing results.",
 ];
 
@@ -47,9 +46,9 @@ export const deepSpace = {
   hero: {
     eyebrow: "Deep Space",
     title: "Contemporary Pilates meets modern motion",
-    lede: "Our newest low-impact, high-intensity Pilates experience, inspired by the lineage of classical and traditional Pilates, reimagined with a fluid flow.",
   },
   intro: [
+    "Our newest low-impact, high-intensity Pilates experience, inspired by the lineage of classical and traditional Pilates, reimagined with a fluid flow.",
     "Expect a quick yet controlled tempo that strengthens and stretches simultaneously. Deep Space offers a more cardiovascular experience where we weave our APEX focus of maximum time under tension into the modality with seamless, fluid transitions.",
     "You'll feel stronger connections across your entire kinetic chain, improved mobility without overloading joints, and a deeper sense of whole-body awareness.",
   ],
@@ -98,7 +97,6 @@ export const theMachine = {
   hero: {
     eyebrow: "The Machine",
     title: "APEX Xformer",
-    lede: "Reformer Pilates Reimagined.",
   },
   body: [
     "APEX is a high-intensity, low-impact, machine-based workout that will fire up your core to fuel every movement. Build the stamina of your slow twitch muscle fibers as you target your entire body, with special attention to the most commonly overlooked muscle groups; deep core stabilizers and glutes.",

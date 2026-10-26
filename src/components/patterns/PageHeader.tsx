@@ -23,9 +23,10 @@ export type HeaderPhoto = {
  * Use this at the top of every interior page. The home page uses Hero instead.
  * Keep it short so the content shows sooner. Skip the eyebrow when it would only
  * repeat the menu item or page name the visitor just clicked.
- * Pass `photo` to put a studio photo behind the title; the words sit in the
- * lower-left corner and only the bottom is darkened, so the photo shows. Leave it
- * out for the plain gray box.
+ * Pass `photo` to put a studio photo behind the title; the title sits in the
+ * lower-left corner and only the bottom is darkened, so the photo shows. Photo
+ * headers carry the title only (no eyebrow or lede), like Schedule; put any intro
+ * line in the first section below. Leave `photo` out for the plain gray box.
  */
 export function PageHeader({
   eyebrow,
