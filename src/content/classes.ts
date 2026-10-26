@@ -104,4 +104,12 @@ export const theMachine = {
     "APEX is a high-intensity, low-impact, machine-based workout that will fire up your core to fuel every movement. Build the stamina of your slow twitch muscle fibers as you target your entire body, with special attention to the most commonly overlooked muscle groups; deep core stabilizers and glutes.",
     "The pilates-inspired machine houses 2 platforms and 1 gliding carriage which can be springloaded from 0 to 180 pounds of resistance to challenge every fitness level. Transform your body, optimize your health, reach your peak.",
   ],
+  video: {
+    src: "/video/the-machine.mp4",
+    poster: "/img/the-machine",
+    posterWidths: [640, 1280],
+    width: 1280,
+    height: 720,
+    alt: "A student moving through an APEX class on the machine",
+  },
 };

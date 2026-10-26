@@ -1,4 +1,5 @@
 import { SiteChrome } from "@/components/layout/SiteChrome";
+import { ClipVideo } from "@/components/patterns/ClipVideo";
 import { PageHeader } from "@/components/patterns/PageHeader";
 import { headerPhotos } from "@/content/header-photos";
 import { theMachine } from "@/content/classes";
@@ -18,6 +19,9 @@ export function TheMachinePage() {
           {theMachine.body.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
+        </div>
+        <div className="shell-narrow mt-10">
+          <ClipVideo {...theMachine.video} />
         </div>
       </section>
 
