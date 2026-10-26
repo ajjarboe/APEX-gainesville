@@ -51,12 +51,13 @@ export const headerPhotos = {
     focus: "upper",
   },
   schedule: {
-    src: "/img/schedule-class",
-    alt: "Three students in a lunge on the Xformer machines in an APEX class",
+    src: "/img/schedule-coaching",
+    alt: "A smiling APEX teacher with a hand on a student's back as she stretches forward on the Xformer under pink studio light",
     widths: [640, 1100, 1800],
     width: 1800,
-    height: 1164,
-    focus: "top",
+    height: 1200,
+    focus: "upper",
+    tall: true,
   },
   pricing: {
     src: "/img/pricing-class",
