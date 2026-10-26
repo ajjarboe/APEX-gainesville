@@ -16,7 +16,7 @@ export type HeaderPhoto = {
    * "lower" slides the photo up so more of the bottom shows: use this when the main person sits low in the frame.
    */
   focus?: "upper" | "top" | "lower";
-  /** A taller banner for group photos, so every row of faces stays in view on wide screens. */
+  /** No longer changes anything: every photo header is now the same (tall) height. Kept so older entries still type-check. */
   tall?: boolean;
 };
 
