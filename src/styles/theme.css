@@ -947,6 +947,14 @@ video.hero-media {
   object-fit: cover;
   border-radius: var(--radius-lg);
 }
+.media-wide {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
 
 /* Disclosure — classes, FAQ, bios */
 .disclose {
