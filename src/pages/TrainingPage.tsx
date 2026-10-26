@@ -8,15 +8,16 @@ import { pages } from "@/content/pages";
 export function TrainingPage() {
   return (
     <SiteChrome path={pages.training.path}>
-      <PageHeader
-        photo={headerPhotos.training}
-        title={teacherTraining.hero.title}
-        lede={teacherTraining.hero.lede}
-      >
-        <a className="btn btn-primary" href={teacherTraining.contact.href}>
-          {teacherTraining.contact.label}
-        </a>
-      </PageHeader>
+      <PageHeader photo={headerPhotos.training} title={teacherTraining.hero.title} />
+
+      <section className="band">
+        <div className="shell-narrow text-center">
+          <p className="lede mx-auto">{teacherTraining.hero.lede}</p>
+          <a className="btn btn-primary mt-8" href={teacherTraining.contact.href}>
+            {teacherTraining.contact.label}
+          </a>
+        </div>
+      </section>
 
       <section className="band">
         <div className="shell">
@@ -30,6 +31,7 @@ export function TrainingPage() {
                   role: person.role,
                   photo: person.photo,
                 }}
+                round
               />
             ))}
           </div>
