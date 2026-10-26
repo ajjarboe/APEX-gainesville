@@ -38,6 +38,11 @@ export const home = {
     lede: "Convenient access to both sides of town, with spa-like locker rooms and top-of-the-line machines at each.",
     cta: { href: "/our-studio/", label: "Visit a studio" },
   },
+  map: {
+    title: "Find us in Gainesville",
+    src: "https://www.google.com/maps?q=Gainesville,+FL&output=embed",
+    label: "Map of Gainesville, FL",
+  },
   tiles: [
     { src: "/img/tile-1", alt: "APEX class on the Megaformer" },
     { src: "/img/tile-2", alt: "APEX studio interior" },

@@ -22,9 +22,9 @@ export function TheMachinePage() {
 
       <section className="band band-warm">
         <div className="shell-narrow text-center">
-          <h2 className="display-md">Ready to try it?</h2>
-          <a className="btn btn-primary mt-8" href="/schedule/">
-            Book a class
+          <h2 className="display-md">{theMachine.closing.title}</h2>
+          <a className="btn btn-primary mt-8" href={theMachine.closing.cta.href}>
+            {theMachine.closing.cta.label}
           </a>
         </div>
       </section>

@@ -7,12 +7,14 @@ export function PriceCard({
   term,
   save,
   feature,
+  cta = "Get started",
 }: {
   offering: OfferingKey;
   name: string;
   term: string;
   save?: string;
   feature?: boolean;
+  cta?: string;
 }) {
   return (
     <div className={feature ? "price-card price-card-feature" : "price-card"}>
@@ -22,7 +24,7 @@ export function PriceCard({
       {save ? <p className="price-save">{save}</p> : null}
       <div className="pt-6">
         <CheckoutLink offering={offering} variant={feature ? "primary" : "ghost"}>
-          Get started
+          {cta}
         </CheckoutLink>
       </div>
     </div>

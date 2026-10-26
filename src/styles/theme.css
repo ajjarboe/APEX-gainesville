@@ -7,10 +7,12 @@
 /* ------------------------------------------------------------------
    0. Fonts — self-hosted. Oswald for display, Nunito Sans for body.
    ------------------------------------------------------------------ */
+/* Oswald is regular weight only, everywhere (Rae, Oct 2026). This one face
+   covers every weight so headings never render bold or fake-bold. */
 @font-face {
   font-family: "Oswald";
-  src: url("/fonts/oswald-500.woff2") format("woff2");
-  font-weight: 500;
+  src: url("/fonts/oswald-400.woff2") format("woff2");
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
@@ -22,20 +24,6 @@
 .head .head-logo .logo-on-light { display: none; }
 .head .head-logo .logo-on-dark { display: block; }
 
-@font-face {
-  font-family: "Oswald";
-  src: url("/fonts/oswald-600.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Oswald";
-  src: url("/fonts/oswald-700.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 @font-face {
   font-family: "Nunito Sans";
   src: url("/fonts/nunito-sans-400.woff2") format("woff2");
@@ -898,6 +886,62 @@ video.hero-media {
   border-radius: var(--radius-lg);
 }
 
+/* Home: black and white photo strip. Square corners; swipes sideways on phones. */
+.media-mono {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 0;
+  filter: grayscale(1);
+}
+.photo-strip {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 70%;
+  gap: 0.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.photo-strip > * {
+  scroll-snap-align: start;
+}
+@media (min-width: 900px) {
+  .photo-strip {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(6, 1fr);
+    overflow-x: visible;
+  }
+}
+
+/* A row of cards that scrolls sideways (testimonials). */
+.scroll-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(17rem, 85%);
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.75rem;
+}
+.scroll-row > * {
+  scroll-snap-align: start;
+}
+@media (min-width: 900px) {
+  .scroll-row {
+    grid-auto-columns: minmax(20rem, 30%);
+  }
+}
+
+/* Home: embedded Google map */
+.map-frame {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: 18rem;
+  border: 0;
+  border-radius: var(--radius-lg);
+}
+
 /* Disclosure — classes, FAQ, bios */
 .disclose {
   border-bottom: 1px solid var(--border);
@@ -936,6 +980,14 @@ video.hero-media {
 }
 .disclose-body > * + * {
   margin-top: 0.85rem;
+}
+
+/* Class length under a class description: plain words, not chips. */
+.meta-text {
+  font-family: var(--font-display);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-text);
 }
 
 /* Class + pricing meta */

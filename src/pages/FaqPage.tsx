@@ -11,7 +11,6 @@ export function FaqPage() {
     <SiteChrome path={pages.faq.path}>
       <JsonLd data={faqSchema()} />
       <PageHeader
-        eyebrow="FAQ"
         title="Frequently asked questions"
         lede="Booking, waitlists, penalties, rentals and memberships. If your question is not here, call or text the studio."
       />

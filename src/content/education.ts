@@ -16,7 +16,6 @@ export const teacherTraining = {
 
 export const careers = {
   hero: {
-    eyebrow: "Careers",
     title: "Join our team",
     lede: "We hire from within our student community. Your interview or audition will include questions about classes you have taken, teachers and staff you have connected with, and ways you feel you can contribute to our culture.",
   },

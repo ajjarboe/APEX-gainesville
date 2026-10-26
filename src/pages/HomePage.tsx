@@ -71,10 +71,23 @@ export function HomePage() {
         </div>
       </section>
 
+      <section className="band band-tight">
+        <div className="shell">
+          <h2 className="display-md">{home.map.title}</h2>
+          <iframe
+            className="map-frame mt-8"
+            src={home.map.src}
+            title={home.map.label}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+      </section>
+
       <section className="band">
         <div className="shell">
           <h2 className="display-md">What students say</h2>
-          <div className="grid-auto mt-10">
+          <div className="scroll-row mt-10">
             {home.testimonials.map((item) => (
               <blockquote key={item.name} className="quote">
                 <p>&ldquo;{item.quote}&rdquo;</p>
@@ -88,17 +101,17 @@ export function HomePage() {
       <section className="band band-warm">
         <div className="shell">
           <h2 className="display-md">Inside the studio</h2>
-          <div className="grid-auto mt-10">
+          <div className="photo-strip mt-10">
             {home.tiles.map((tile) => (
               <Photo
                 key={tile.src}
                 src={tile.src}
                 alt={tile.alt}
                 widths={[640, 1100]}
-                sizes="(min-width: 900px) 20rem, 45vw"
+                sizes="(min-width: 900px) 16vw, 70vw"
                 width={1100}
                 height={1100}
-                className="media"
+                className="media-mono"
               />
             ))}
           </div>

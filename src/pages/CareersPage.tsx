@@ -6,7 +6,7 @@ import { pages } from "@/content/pages";
 export function CareersPage() {
   return (
     <SiteChrome path={pages.careers.path}>
-      <PageHeader eyebrow={careers.hero.eyebrow} title={careers.hero.title} lede={careers.hero.lede} />
+      <PageHeader title={careers.hero.title} lede={careers.hero.lede} />
 
       <section className="band">
         <div className="shell-narrow prose text-foreground-soft">
