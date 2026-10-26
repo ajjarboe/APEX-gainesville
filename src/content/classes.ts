@@ -97,8 +97,8 @@ export const deepSpace = {
 export const theMachine = {
   hero: {
     eyebrow: "The Machine",
-    title: "Meet the Megaformer",
-    lede: "A new Reformer Pilates experience.",
+    title: "APEX Xformer",
+    lede: "Reformer Pilates Reimagined.",
   },
   body: [
     "APEX is a high-intensity, low-impact, machine-based workout that will fire up your core to fuel every movement. Build the stamina of your slow twitch muscle fibers as you target your entire body, with special attention to the most commonly overlooked muscle groups; deep core stabilizers and glutes.",
