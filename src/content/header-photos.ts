@@ -12,13 +12,19 @@ export const headerPhotos = {
     height: 668,
   },
   theWorkout: {
-    src: "/img/workout-jax",
-    alt: "A row of APEX Xformer machines in the studio",
+    src: "/img/studio-machines",
+    alt: "Rows of APEX Xformer machines in the studio under warm class lighting",
     widths: [640, 1100, 1800],
     width: 1800,
-    height: 1200,
+    height: 1096,
   },
-  deepSpace: { src: "/img/nw", alt: "A student stretching on the machine at APEX Northwest", ...square },
+  deepSpace: {
+    src: "/img/studio-machines",
+    alt: "Rows of APEX Xformer machines in the studio under warm class lighting",
+    widths: [640, 1100, 1800],
+    width: 1800,
+    height: 1096,
+  },
   ourStudio: {
     src: "/img/hero",
     alt: "The APEX studio under class lighting",
