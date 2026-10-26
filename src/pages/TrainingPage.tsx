@@ -30,6 +30,7 @@ export function TrainingPage() {
                   role: person.role,
                   photo: person.photo,
                 }}
+                round
               />
             ))}
           </div>
