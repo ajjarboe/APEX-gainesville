@@ -37,12 +37,12 @@ export const home = {
   testimonialsTitle: "What Our Students Say",
   tilesTitle: "Inside Our Studios",
   tiles: [
-    { src: "/img/tile-1", alt: "APEX class on the Megaformer" },
-    { src: "/img/tile-2", alt: "APEX studio interior" },
-    { src: "/img/tile-3", alt: "Students training at APEX" },
-    { src: "/img/tile-4", alt: "APEX machine detail" },
-    { src: "/img/tile-5", alt: "APEX community in class" },
-    { src: "/img/tile-6", alt: "APEX Gainesville studio" },
+    { src: "/img/home-row-1", alt: "Smiling students on the APEX Xformers under green light" },
+    { src: "/img/home-row-2", alt: "Students in a squat on the APEX Xformers under pink light" },
+    { src: "/img/home-row-3", alt: "Student in a kneeling leg lift in front of the APEX mural" },
+    { src: "/img/home-row-4", alt: "Full APEX class in a plank on the Xformers" },
+    { src: "/img/home-row-5", alt: "APEX class in a heavy squat hold on the Xformers" },
+    { src: "/img/home-row-6", alt: "APEX class on the Xformers under blue and green light" },
   ],
   testimonials: [
     {
