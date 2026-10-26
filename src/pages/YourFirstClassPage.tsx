@@ -1,6 +1,7 @@
 import { SiteChrome } from "@/components/layout/SiteChrome";
 import { Disclose } from "@/components/patterns/Disclose";
 import { PageHeader } from "@/components/patterns/PageHeader";
+import { headerPhotos } from "@/content/header-photos";
 import { firstClass } from "@/content/first-class";
 import { pages } from "@/content/pages";
 
@@ -8,6 +9,7 @@ export function YourFirstClassPage() {
   return (
     <SiteChrome path={pages.yourFirstClass.path}>
       <PageHeader
+        photo={headerPhotos.yourFirstClass}
         eyebrow={firstClass.hero.eyebrow}
         title={firstClass.hero.title}
         lede={firstClass.hero.lede}

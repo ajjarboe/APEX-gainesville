@@ -1,5 +1,6 @@
 import { SiteChrome } from "@/components/layout/SiteChrome";
 import { PageHeader } from "@/components/patterns/PageHeader";
+import { headerPhotos } from "@/content/header-photos";
 import { deepSpace } from "@/content/classes";
 import { pages } from "@/content/pages";
 
@@ -7,7 +8,7 @@ export function DeepSpacePage() {
   return (
     <SiteChrome path={pages.deepSpace.path}>
       <PageHeader
-        eyebrow={deepSpace.hero.eyebrow}
+        photo={headerPhotos.deepSpace}
         title={deepSpace.hero.title}
         lede={deepSpace.hero.lede}
       />
