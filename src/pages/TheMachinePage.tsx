@@ -1,5 +1,6 @@
 import { SiteChrome } from "@/components/layout/SiteChrome";
 import { PageHeader } from "@/components/patterns/PageHeader";
+import { headerPhotos } from "@/content/header-photos";
 import { theMachine } from "@/content/classes";
 import { pages } from "@/content/pages";
 
@@ -7,6 +8,7 @@ export function TheMachinePage() {
   return (
     <SiteChrome path={pages.theMachine.path}>
       <PageHeader
+        photo={headerPhotos.theMachine}
         title={theMachine.hero.title}
         lede={theMachine.hero.lede}
       />

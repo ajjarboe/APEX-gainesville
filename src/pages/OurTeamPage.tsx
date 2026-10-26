@@ -1,5 +1,6 @@
 import { SiteChrome } from "@/components/layout/SiteChrome";
 import { PageHeader } from "@/components/patterns/PageHeader";
+import { headerPhotos } from "@/content/header-photos";
 import { PersonCard } from "@/components/patterns/PersonCard";
 import { pages } from "@/content/pages";
 import { directors, faculty, ownership, story, teamIntro } from "@/content/team";
@@ -7,7 +8,8 @@ import { directors, faculty, ownership, story, teamIntro } from "@/content/team"
 export function OurTeamPage() {
   return (
     <SiteChrome path={pages.ourTeam.path}>
-      <PageHeader title="Our Team" lede={story.paragraphs[0]} />
+      <PageHeader
+        photo={headerPhotos.ourTeam} title="Our Team" lede={story.paragraphs[0]} />
 
       <section className="band">
         <div className="shell-narrow">

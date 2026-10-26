@@ -1,13 +1,15 @@
 import { SiteChrome } from "@/components/layout/SiteChrome";
 import { Disclose } from "@/components/patterns/Disclose";
 import { PageHeader } from "@/components/patterns/PageHeader";
+import { headerPhotos } from "@/content/header-photos";
 import { classesIntro, classStyles } from "@/content/classes";
 import { pages } from "@/content/pages";
 
 export function TheWorkoutPage() {
   return (
     <SiteChrome path={pages.theWorkout.path}>
-      <PageHeader title="APEX Signature Pilates" lede={classesIntro[0]} />
+      <PageHeader
+        photo={headerPhotos.theWorkout} title="APEX Signature Pilates" lede={classesIntro[0]} />
 
       <section className="band">
         <div className="shell-narrow">

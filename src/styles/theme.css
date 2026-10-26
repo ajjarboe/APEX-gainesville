@@ -91,6 +91,7 @@
   --pod-sand-soft: color-mix(in srgb, var(--apex-sand) 45%, var(--apex-bone));
   --pod-scrim: color-mix(in srgb, var(--apex-ink) 35%, transparent);
   --pod-scrim-strong: color-mix(in srgb, var(--apex-ink) 55%, transparent);
+  --pod-scrim-heavy: color-mix(in srgb, var(--apex-ink) 72%, transparent);
 
   --pod-shadow: 0 14px 40px color-mix(in srgb, var(--apex-ink) 12%, transparent);
   --pod-shadow-lift: 0 22px 60px color-mix(in srgb, var(--apex-ink) 18%, transparent);
@@ -815,6 +816,48 @@ section[id],
 .hero h1 {
   color: var(--on-dark);
   font-size: clamp(1.85rem, 4.4vw, 3rem);
+}
+/* Photo behind an interior page title: short banner, darkened so white type reads. */
+.page-photo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: clamp(15rem, 32vw, 23rem);
+  padding-block: 2.5rem;
+  background: var(--surface-dark);
+  color: var(--on-dark);
+  overflow: hidden;
+}
+.page-photo-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    var(--pod-scrim-heavy) 0%,
+    var(--pod-scrim-strong) 55%,
+    var(--pod-scrim) 100%
+  );
+}
+.page-photo-inner {
+  position: relative;
+}
+.page-photo h1 {
+  color: var(--on-dark);
+}
+.page-photo .eyebrow {
+  color: var(--sand);
+}
+.page-photo .lede {
+  color: var(--on-dark);
+}
+.page-photo .btn-ghost {
+  color: var(--on-dark);
+  border-color: var(--border-dark);
+}
+.page-photo .btn-ghost:hover {
+  background: var(--on-dark);
+  color: var(--surface-dark);
+  border-color: var(--on-dark);
 }
 video.hero-media {
   pointer-events: none;

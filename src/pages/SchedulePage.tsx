@@ -1,6 +1,7 @@
 import { SiteChrome } from "@/components/layout/SiteChrome";
 import { BookingFrame } from "@/components/patterns/BookingFrame";
 import { PageHeader } from "@/components/patterns/PageHeader";
+import { headerPhotos } from "@/content/header-photos";
 import { scheduleSrc } from "@/content/checkout";
 import { pages } from "@/content/pages";
 import { site } from "@/content/site";
@@ -10,6 +11,7 @@ export function SchedulePage() {
   return (
     <SiteChrome path={pages.schedule.path}>
       <PageHeader
+        photo={headerPhotos.schedule}
         title="Northwest & Southwest"
         lede="One calendar for both Gainesville studios. Pick the class, then confirm which location in the app."
       >

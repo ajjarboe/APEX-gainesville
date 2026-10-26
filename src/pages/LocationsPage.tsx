@@ -1,5 +1,6 @@
 import { SiteChrome } from "@/components/layout/SiteChrome";
 import { PageHeader } from "@/components/patterns/PageHeader";
+import { headerPhotos } from "@/content/header-photos";
 import { pages } from "@/content/pages";
 import { site } from "@/content/site";
 import { studios } from "@/content/studios";
@@ -8,6 +9,7 @@ export function LocationsPage() {
   return (
     <SiteChrome path={pages.locations.path}>
       <PageHeader
+        photo={headerPhotos.locations}
         title="Which location?"
         lede="Both Gainesville studios share one schedule. Jax Beach has its own site."
       />

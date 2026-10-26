@@ -2,6 +2,7 @@ import { SiteChrome } from "@/components/layout/SiteChrome";
 import { JsonLd, breadcrumbSchema, gymSchema } from "@/components/patterns/JsonLd";
 import { Photo } from "@/components/patterns/Photo";
 import { PageHeader } from "@/components/patterns/PageHeader";
+import { headerPhotos } from "@/content/header-photos";
 import { pages } from "@/content/pages";
 import { studios, studiosIntro } from "@/content/studios";
 
@@ -9,7 +10,8 @@ export function OurStudioPage() {
   return (
     <SiteChrome path={pages.ourStudio.path}>
       <JsonLd data={[...gymSchema(), breadcrumbSchema("Our Studios", pages.ourStudio.path)]} />
-      <PageHeader title="Our Studios" lede={studiosIntro} />
+      <PageHeader
+        photo={headerPhotos.ourStudio} title="Our Studios" lede={studiosIntro} />
 
       <section className="band">
         <div className="shell grid-2">

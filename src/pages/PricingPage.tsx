@@ -1,6 +1,7 @@
 import { SiteChrome } from "@/components/layout/SiteChrome";
 import { JsonLd, breadcrumbSchema, gymSchema } from "@/components/patterns/JsonLd";
 import { PageHeader } from "@/components/patterns/PageHeader";
+import { headerPhotos } from "@/content/header-photos";
 import { PriceCard } from "@/components/patterns/PriceCard";
 import { pages } from "@/content/pages";
 import { pricingGroups, pricingNote } from "@/content/pricing";
@@ -10,6 +11,7 @@ export function PricingPage() {
     <SiteChrome path={pages.pricing.path}>
       <JsonLd data={[...gymSchema(), breadcrumbSchema("Pricing", pages.pricing.path)]} />
       <PageHeader
+        photo={headerPhotos.pricing}
         title="Memberships & class packs"
         lede="Start with 8 classes for $60. Stay for whichever membership matches how you actually train."
       />
