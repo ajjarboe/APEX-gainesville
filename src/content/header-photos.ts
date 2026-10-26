@@ -32,7 +32,14 @@ export const headerPhotos = {
     width: 1800,
     height: 1350,
   },
-  ourTeam: { src: "/img/tile-6", alt: "The APEX community after class", ...square },
+  ourTeam: {
+    src: "/img/team-graduation",
+    alt: "A smiling APEX teacher training graduating class gathered around the Xformer machines in the studio",
+    widths: [640, 1100, 1800],
+    width: 1800,
+    height: 1350,
+    tall: true,
+  },
   yourFirstClass: { src: "/img/first-class-intro", alt: "A smiling student on the Xformer in class", widths: [640, 1100, 1800], width: 1800, height: 1200 },
   locations: { src: "/img/sw", alt: "A full class at APEX Southwest", ...square, focus: "upper" },
   schedule: {

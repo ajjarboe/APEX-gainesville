@@ -855,6 +855,9 @@ section[id],
     );
   }
 }
+.page-photo-tall {
+  min-height: clamp(20rem, 46vw, 36rem);
+}
 .page-photo .focus-upper {
   object-position: 50% 28%;
 }
@@ -995,6 +998,9 @@ video.hero-media {
 }
 .person-round {
   text-align: center;
+}
+.person-round .disclose-body {
+  text-align: left;
 }
 .media-tall {
   width: 100%;
