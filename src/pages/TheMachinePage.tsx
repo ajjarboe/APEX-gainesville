@@ -7,7 +7,6 @@ export function TheMachinePage() {
   return (
     <SiteChrome path={pages.theMachine.path}>
       <PageHeader
-        eyebrow={theMachine.hero.eyebrow}
         title={theMachine.hero.title}
         lede={theMachine.hero.lede}
       />

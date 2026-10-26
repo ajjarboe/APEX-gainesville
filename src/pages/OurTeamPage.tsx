@@ -7,7 +7,7 @@ import { directors, faculty, ownership, story, teamIntro } from "@/content/team"
 export function OurTeamPage() {
   return (
     <SiteChrome path={pages.ourTeam.path}>
-      <PageHeader eyebrow="About" title="Our Team" lede={story.paragraphs[0]} />
+      <PageHeader title="Our Team" lede={story.paragraphs[0]} />
 
       <section className="band">
         <div className="shell-narrow">

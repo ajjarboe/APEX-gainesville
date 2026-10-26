@@ -7,7 +7,6 @@ export function DeepSpacePage() {
   return (
     <SiteChrome path={pages.deepSpace.path}>
       <PageHeader
-        eyebrow={deepSpace.hero.eyebrow}
         title={deepSpace.hero.title}
         lede={deepSpace.hero.lede}
       />

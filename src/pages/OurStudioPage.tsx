@@ -9,7 +9,7 @@ export function OurStudioPage() {
   return (
     <SiteChrome path={pages.ourStudio.path}>
       <JsonLd data={[...gymSchema(), breadcrumbSchema("Our Studios", pages.ourStudio.path)]} />
-      <PageHeader eyebrow="About" title="Our Studios" lede={studiosIntro} />
+      <PageHeader title="Our Studios" lede={studiosIntro} />
 
       <section className="band">
         <div className="shell grid-2">

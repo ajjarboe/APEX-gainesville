@@ -8,7 +8,6 @@ export function LocationsPage() {
   return (
     <SiteChrome path={pages.locations.path}>
       <PageHeader
-        eyebrow="Locations"
         title="Which location?"
         lede="Both Gainesville studios share one schedule. Jax Beach has its own site."
       />

@@ -7,7 +7,7 @@ import { pages } from "@/content/pages";
 export function TheWorkoutPage() {
   return (
     <SiteChrome path={pages.theWorkout.path}>
-      <PageHeader eyebrow="Classes" title="APEX Signature Pilates" lede={classesIntro[0]} />
+      <PageHeader title="APEX Signature Pilates" lede={classesIntro[0]} />
 
       <section className="band">
         <div className="shell-narrow">

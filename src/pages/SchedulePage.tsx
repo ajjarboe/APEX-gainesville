@@ -10,7 +10,6 @@ export function SchedulePage() {
   return (
     <SiteChrome path={pages.schedule.path}>
       <PageHeader
-        eyebrow="Schedule"
         title="Northwest & Southwest"
         lede="One calendar for both Gainesville studios. Pick the class, then confirm which location in the app."
       >

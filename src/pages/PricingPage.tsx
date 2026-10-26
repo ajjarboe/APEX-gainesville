@@ -10,7 +10,6 @@ export function PricingPage() {
     <SiteChrome path={pages.pricing.path}>
       <JsonLd data={[...gymSchema(), breadcrumbSchema("Pricing", pages.pricing.path)]} />
       <PageHeader
-        eyebrow="Pricing"
         title="Memberships & class packs"
         lede="Start with 8 classes for $60. Stay for whichever membership matches how you actually train."
       />
