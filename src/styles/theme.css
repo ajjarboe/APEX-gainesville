@@ -964,6 +964,17 @@ video.hero-media {
   padding: clamp(1.25rem, 3vw, 2rem);
 }
 
+/* Use this when one full-width box should stand out with a solid outline in the text color
+   (white in dark mode, near-black in light mode), e.g. the Pro tips box on Your First Class. */
+.outline-frame-solid {
+  border: 2px solid var(--foreground);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+.outline-frame-solid ul ul {
+  list-style-type: circle;
+}
+
 .grid-auto {
   display: grid;
   gap: 1.5rem;

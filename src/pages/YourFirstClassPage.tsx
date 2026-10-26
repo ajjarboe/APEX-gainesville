@@ -4,6 +4,7 @@ import { PageHeader } from "@/components/patterns/PageHeader";
 import { headerPhotos } from "@/content/header-photos";
 import { firstClass } from "@/content/first-class";
 import { pages } from "@/content/pages";
+import { RichText } from "@/lib/rich-text";
 
 export function YourFirstClassPage() {
   return (
@@ -23,18 +24,24 @@ export function YourFirstClassPage() {
 
       <section className="band">
         <div className="shell">
-          <h2 className="display-md">{firstClass.tips.title}</h2>
-          <div className="grid-auto mt-10">
-            {firstClass.tips.groups.map((group) => (
-              <div key={group.title} className="card-flat">
-                <h3 className="display-sm">{group.title}</h3>
-                <ul className="mt-4 space-y-3 text-foreground-soft">
-                  {group.items.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          <div className="outline-frame-solid">
+            <h2 className="display-md">{firstClass.tips.title}</h2>
+            <ul className="mt-6 list-disc space-y-3 pl-5 text-foreground-soft">
+              {firstClass.tips.items.map((item) => (
+                <li key={item.text} className={item.emphasis ? "font-bold text-foreground underline" : undefined}>
+                  <RichText text={item.text} />
+                  {item.sub ? (
+                    <ul className="mt-2 space-y-2 pl-5">
+                      {item.sub.map((line) => (
+                        <li key={line}>
+                          <RichText text={line} />
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
