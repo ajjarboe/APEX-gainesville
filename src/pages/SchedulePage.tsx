@@ -10,21 +10,19 @@ import { studios } from "@/content/studios";
 export function SchedulePage() {
   return (
     <SiteChrome path={pages.schedule.path}>
-      <PageHeader
-        photo={headerPhotos.schedule}
-        title="Northwest & Southwest"
-        lede="One calendar for both Gainesville studios. Pick the class, then confirm which location in the app."
-      >
-        {studios.map((studio) => (
-          <a key={studio.key} className="btn btn-ghost" href={`tel:${studio.phoneRaw}`}>
-            {studio.key === "northwest" ? "NW" : "SW"} {studio.phoneDisplay}
-          </a>
-        ))}
-      </PageHeader>
+      <PageHeader photo={headerPhotos.schedule} title="Book at Northwest & Southwest" />
 
       <section className="band band-tight">
         <div className="shell">
-          <p className="text-right text-sm text-muted">{site.app.androidNote}</p>
+          <h2 className="display-md">Need help booking?</h2>
+          <div className="mt-5 flex flex-wrap gap-3">
+            {studios.map((studio) => (
+              <a key={studio.key} className="btn btn-primary" href={`tel:${studio.phoneRaw}`}>
+                Call {studio.key === "northwest" ? "NW" : "SW"}
+              </a>
+            ))}
+          </div>
+          <p className="mt-8 text-right text-sm text-muted">{site.app.androidNote}</p>
           <div className="mt-6">
             <BookingFrame src={scheduleSrc()} title="APEX Gainesville class schedule" priority />
           </div>
