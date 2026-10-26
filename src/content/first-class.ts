@@ -7,31 +7,26 @@ export const firstClass = {
     secondary: { href: "/schedule/", label: "See the schedule" },
   },
   tips: {
-    title: "Pro tips",
-    groups: [
+    title: "Pro tips before your first class",
+    // One box of bullets. `sub` adds indented bullets under an item.
+    // `emphasis: true` shows that bullet (and its sub-bullets) bold and underlined.
+    items: [
       {
-        title: "Pre class",
-        items: [
-          "Arrive 10 minutes before class starts for a machine and studio tour. If you don't arrive in time, you may be asked to reschedule.",
-          "Prepare your mindset for the challenge. We celebrate failure at APEX.",
-          "Bring a water bottle. Download the RAD App to pre-register and secure your machine.",
-          "If you are running late, call or text the studio. Five minutes past start time, no one is permitted to enter — even if you called ahead.",
-        ],
+        text: "Arrive 10 minutes before class starts for a machine and studio tour.",
+        sub: ["If you don't arrive in time, you may be asked to reschedule."],
       },
+      { text: "Bring a water bottle." },
+      { text: "Grip socks are required. Purchase a pair at the retail boutique if you need them." },
+      { text: "Wear form-fitting athletic attire. Tie hair back for safety around springs." },
+      { text: "Download the RAD App to pre-register and book your session." },
+      { text: "Prepare your mindset for the challenge. We celebrate failure at APEX." },
+      { text: "Check in at the front desk so we can learn your name and help you get into class." },
       {
-        title: "For class",
-        items: [
-          "Check in at the front desk so we can learn your name and help you get into class.",
-        ],
+        text: "If you are running late, call or text the studio.",
+        sub: ["5 minutes past start time, no one is permitted to enter — even if you called ahead."],
+        emphasis: true,
       },
-      {
-        title: "Attire",
-        items: [
-          "Grip socks are required. Purchase a pair at the retail boutique if you need them.",
-          "Wear form-fitting athletic attire. Tie hair back for safety around springs.",
-        ],
-      },
-    ],
+    ] as { text: string; sub?: string[]; emphasis?: boolean }[],
   },
   faq: [
     faqItemSchema.parse({
