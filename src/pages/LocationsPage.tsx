@@ -10,8 +10,7 @@ export function LocationsPage() {
     <SiteChrome path={pages.locations.path}>
       <PageHeader
         photo={headerPhotos.locations}
-        title="Which location?"
-        lede="Both Gainesville studios share one schedule. Jax Beach has its own site."
+        title="Our Locations"
       />
 
       <section className="band">
