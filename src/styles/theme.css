@@ -823,9 +823,10 @@ section[id],
 .page-photo {
   position: relative;
   display: flex;
-  align-items: center;
-  min-height: clamp(15rem, 32vw, 23rem);
-  padding-block: 2.5rem;
+  /* Title sits in the lower-left corner so the top of the photo stays clear. */
+  align-items: flex-end;
+  min-height: clamp(18rem, 38vw, 28rem);
+  padding-block: 6rem 2rem;
   background: var(--surface-dark);
   color: var(--on-dark);
   overflow: hidden;
@@ -833,12 +834,26 @@ section[id],
 .page-photo-scrim {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    90deg,
-    var(--pod-scrim-heavy) 0%,
-    var(--pod-scrim-strong) 55%,
-    var(--pod-scrim) 100%
-  );
+  /* Dark only where the words are (bottom, a little more on the left); the top stays bright. */
+  background:
+    linear-gradient(
+      0deg,
+      var(--pod-scrim-heavy) 0%,
+      var(--pod-scrim-strong) 35%,
+      transparent 75%
+    ),
+    linear-gradient(90deg, var(--pod-scrim) 0%, transparent 60%);
+}
+/* On phones the words cover most of the photo, so keep it shaded all the way up. */
+@media (max-width: 640px) {
+  .page-photo-scrim {
+    background: linear-gradient(
+      0deg,
+      var(--pod-scrim-heavy) 0%,
+      var(--pod-scrim-strong) 55%,
+      var(--pod-scrim) 100%
+    );
+  }
 }
 .page-photo .focus-upper {
   object-position: 50% 28%;
@@ -848,6 +863,7 @@ section[id],
 }
 .page-photo-inner {
   position: relative;
+  text-align: left;
 }
 .page-photo h1 {
   color: var(--on-dark);
@@ -857,6 +873,7 @@ section[id],
 }
 .page-photo .lede {
   color: var(--on-dark);
+  max-width: 46ch;
 }
 .page-photo .btn-ghost {
   color: var(--on-dark);
