@@ -66,13 +66,7 @@ export const pages = {
     path: "/training/",
     title: "Teacher Training | APEX Gainesville",
     description:
-      "Learn to teach APEX Foundations, 1, 2, and FLEX. Fall 2026 training — contact gnv.leadership@yogapod.com.",
-  }),
-  infoSessions: pageMetaSchema.parse({
-    path: "/info-sessions/",
-    title: "Info Sessions | APEX Gainesville",
-    description:
-      "Fall Teacher Training Info Sessions — Sept 27, Oct 1, 2, 3, 10, 17. Sign up on the mailing list.",
+      "Learn to teach APEX Foundations, 1, 2, and FLEX. Fall 2026 training. Contact leadership@radcollective.us.",
   }),
   faq: pageMetaSchema.parse({
     path: "/faq/",

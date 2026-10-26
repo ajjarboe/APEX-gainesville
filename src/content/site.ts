@@ -23,5 +23,9 @@ export const site = {
     blurb:
       "One app for APEX, RITUAL and yoga pod. Book classes, manage your account, and switch between studios without ever logging out.",
     androidNote: "Same email as APEX. Tap Forgot Password to set a new one.",
+    links: [
+      { label: "Download on the App Store", href: "https://apps.apple.com/us/app/rad-collective/id6797615424" },
+      { label: "Get it on Google Play", href: "https://play.google.com/store/apps/details?id=com.arketa.radcollective" },
+    ],
   },
 } as const;

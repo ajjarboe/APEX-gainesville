@@ -19,7 +19,6 @@ const pages = [
   { file: "dist/pricing/index.html", mod: "/src/pages/PricingPage.tsx", exp: "PricingPage" },
   { file: "dist/schedule/index.html", mod: "/src/pages/SchedulePage.tsx", exp: "SchedulePage" },
   { file: "dist/training/index.html", mod: "/src/pages/TrainingPage.tsx", exp: "TrainingPage" },
-  { file: "dist/info-sessions/index.html", mod: "/src/pages/InfoSessionsPage.tsx", exp: "InfoSessionsPage" },
   { file: "dist/faq/index.html", mod: "/src/pages/FaqPage.tsx", exp: "FaqPage" },
   { file: "dist/careers/index.html", mod: "/src/pages/CareersPage.tsx", exp: "CareersPage" },
   { file: "dist/inclusivity/index.html", mod: "/src/pages/InclusivityPage.tsx", exp: "InclusivityPage" },

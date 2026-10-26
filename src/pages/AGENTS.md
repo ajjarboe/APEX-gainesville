@@ -15,7 +15,6 @@ Public URLs are inherited from the old Squarespace site. Do not rename one witho
 | `/pricing/` | `pricing.tsx` | `PricingPage.tsx` |
 | `/schedule/` | `schedule.tsx` | `SchedulePage.tsx` |
 | `/training/` | `training.tsx` | `TrainingPage.tsx` |
-| `/info-sessions/` | `infoSessions.tsx` | `InfoSessionsPage.tsx` |
 | `/faq/` | `faq.tsx` | `FaqPage.tsx` |
 | `/careers/` | `careers.tsx` | `CareersPage.tsx` |
 | `/inclusivity/` | `inclusivity.tsx` | `InclusivityPage.tsx` |

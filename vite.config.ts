@@ -40,7 +40,6 @@ export default defineConfig({
         pricing: path.resolve(root, "pricing/index.html"),
         schedule: path.resolve(root, "schedule/index.html"),
         training: path.resolve(root, "training/index.html"),
-        infoSessions: path.resolve(root, "info-sessions/index.html"),
         faq: path.resolve(root, "faq/index.html"),
         careers: path.resolve(root, "careers/index.html"),
         inclusivity: path.resolve(root, "inclusivity/index.html"),

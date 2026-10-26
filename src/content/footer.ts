@@ -23,7 +23,6 @@ export const footer = {
       heading: "Learn",
       links: [
         { href: "/training/", label: "Teacher Training" },
-        { href: "/info-sessions/", label: "Info Sessions" },
         { href: "/faq/", label: "FAQ & Policies" },
         { href: "/help/", label: "Account Help" },
         { href: "/careers/", label: "Careers" },
