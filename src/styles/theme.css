@@ -932,16 +932,6 @@ video.hero-media {
   }
 }
 
-/* Home: embedded Google map */
-.map-frame {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  min-height: 18rem;
-  border: 0;
-  border-radius: var(--radius-lg);
-}
-
 /* Disclosure — classes, FAQ, bios */
 .disclose {
   border-bottom: 1px solid var(--border);

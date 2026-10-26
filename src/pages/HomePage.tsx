@@ -6,7 +6,7 @@ import { VideoBackdrop } from "@/components/patterns/VideoBackdrop";
 import { home } from "@/content/home";
 import { pages } from "@/content/pages";
 import { site } from "@/content/site";
-import { directionsUrl, studios } from "@/content/studios";
+import { studios } from "@/content/studios";
 
 export function HomePage() {
   return (
@@ -67,32 +67,6 @@ export function HomePage() {
             <a className="btn btn-ghost mt-8" href={home.studiosTeaser.cta.href}>
               {home.studiosTeaser.cta.label}
             </a>
-          </div>
-        </div>
-      </section>
-
-      <section className="band band-tight">
-        <div className="shell">
-          <h2 className="display-md">{home.map.title}</h2>
-          <iframe
-            className="map-frame mt-8"
-            src={home.map.src}
-            title={home.map.label}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-          <div className="mt-6 flex flex-wrap gap-3">
-            {studios.map((studio) => (
-              <a
-                key={studio.key}
-                className="btn btn-primary"
-                href={directionsUrl(studio.mapQuery)}
-                target="_blank"
-                rel="noopener"
-              >
-                {home.map.directions} {studio.key === "northwest" ? "NW" : "SW"}
-              </a>
-            ))}
           </div>
         </div>
       </section>
