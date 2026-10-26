@@ -37,38 +37,17 @@ export function HomePage() {
       </section>
 
       <section className="band">
-        <div className="shell">
-          <p className="eyebrow">{home.pillars.eyebrow}</p>
-          <h2 className="display-md mt-3">{home.pillars.title}</h2>
-          <div className="grid-auto mt-10">
-            {home.pillars.items.map((item) => (
-              <div key={item.title} className="card-flat">
-                <h3 className="display-sm">{item.title}</h3>
-                <p className="mt-3 text-foreground-soft">{item.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="band band-warm">
         <div className="shell grid-2">
-          <div>
-            <p className="eyebrow">{home.classesTeaser.eyebrow}</p>
-            <h2 className="display-md mt-3">{home.classesTeaser.title}</h2>
-            <p className="lede mt-5">{home.classesTeaser.lede}</p>
-            <a className="btn btn-ghost mt-8" href={home.classesTeaser.cta.href}>
-              {home.classesTeaser.cta.label}
-            </a>
-          </div>
-          <div>
-            <p className="eyebrow">{home.studiosTeaser.eyebrow}</p>
-            <h2 className="display-md mt-3">{home.studiosTeaser.title}</h2>
-            <p className="lede mt-5">{home.studiosTeaser.lede}</p>
-            <a className="btn btn-ghost mt-8" href={home.studiosTeaser.cta.href}>
-              {home.studiosTeaser.cta.label}
-            </a>
-          </div>
+          {[home.classesTeaser, home.studiosTeaser].map((teaser) => (
+            <div key={teaser.eyebrow} className="flex flex-col">
+              <p className="eyebrow">{teaser.eyebrow}</p>
+              <h2 className="display-md mt-3">{teaser.title}</h2>
+              <p className="lede mt-5 mb-8">{teaser.lede}</p>
+              <a className="btn btn-ghost mt-auto self-start" href={teaser.cta.href}>
+                {teaser.cta.label}
+              </a>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -106,12 +85,11 @@ export function HomePage() {
 
       <section className="band band-dark">
         <div className="shell grid-2">
-          <div>
-            <p className="eyebrow">Book anywhere</p>
-            <h2 className="display-md mt-3">Download the {site.app.name}</h2>
-            <p className="lede mt-5">{site.app.blurb}</p>
-            <p className="mt-4 text-on-dark-soft">{site.app.androidNote}</p>
-            <div className="mt-6 flex flex-wrap gap-4">
+          <div className="card-dark flex flex-col justify-between gap-6">
+            <h3 className="display-md">{home.appCard.title}</h3>
+            <p className="lede">{home.appCard.body}</p>
+            <p className="text-on-dark-soft">{home.appCard.note}</p>
+            <div className="flex flex-wrap gap-4">
               {site.app.links.map((link) => (
                 <a key={link.label} className="btn btn-ghost" href={link.href} target="_blank" rel="noopener">
                   {link.label}
@@ -119,18 +97,21 @@ export function HomePage() {
               ))}
             </div>
           </div>
-          <div className="card-dark">
-            <h3 className="display-md">Book this week</h3>
-            <p className="mt-3 text-on-dark-soft">
-              One schedule for Northwest and Southwest.
-            </p>
-            <div className="pill-row mt-6">
+          <div className="card-dark flex flex-col justify-between gap-6">
+            <h3 className="display-md">{home.bookCard.title}</h3>
+            <p className="text-on-dark-soft">{home.bookCard.body}</p>
+            <div className="pill-row">
               <a className="btn btn-ghost" href="/schedule/">
-                See the schedule
+                {home.bookCard.scheduleLabel}
               </a>
               {studios.map((studio) => (
-                <a key={studio.key} className="btn btn-ghost" href={`tel:${studio.phoneRaw}`}>
-                  {studio.key === "northwest" ? "NW" : "SW"} {studio.phoneDisplay}
+                <a
+                  key={studio.key}
+                  className="btn btn-ghost"
+                  href={`tel:${studio.phoneRaw}`}
+                  aria-label={`${home.bookCard.callLabels[studio.key as keyof typeof home.bookCard.callLabels]} ${studio.phoneDisplay}`}
+                >
+                  {home.bookCard.callLabels[studio.key as keyof typeof home.bookCard.callLabels]}
                 </a>
               ))}
             </div>

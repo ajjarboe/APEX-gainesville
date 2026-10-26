@@ -8,35 +8,28 @@ export const home = {
     photo: "/img/hero",
     photoAlt: "APEX Megaformer class in Gainesville",
   },
-  pillars: {
-    eyebrow: "Strength. Precision. Breath.",
-    title: "A practice that meets you where you are",
-    items: [
-      {
-        title: "Signature Megaformer",
-        body: "Failure-driven, slow-twitch training on the machine — Foundations through APEX 2 and FLEX.",
-      },
-      {
-        title: "Deep Space",
-        body: "Contemporary Pilates with breath-to-movement flow. Mobility and challenge without muscular failure.",
-      },
-      {
-        title: "Two studios",
-        body: "Northwest and Southwest Gainesville. Same APEX method, same community, ample parking at both.",
-      },
-    ],
-  },
   classesTeaser: {
-    eyebrow: "The Workout",
+    eyebrow: "Our Workouts",
     title: "Signature and Deep Space",
-    lede: "Xformer Signature Pilates classes deliver endurance, strength, and muscle failure. Deep Space Modern Pilates classes cultivate breath, mobility, and fluidity.",
+    lede: "APEX Signature Pilates classes deliver endurance, strength, and muscle failure. APEX Deep Space Modern Pilates classes cultivate breath, mobility, and precision.",
     cta: { href: "/the-workout/", label: "Check Out Classes" },
   },
   studiosTeaser: {
     eyebrow: "Our Studios",
     title: "Northwest and Southwest",
-    lede: "Convenient access to APEX on both sides of town with spa-like locker rooms, retail boutiques, and 19 APEX Xformers.",
+    lede: "Two convenient locations in town with spa-like locker rooms, retail boutiques, and ample parking. Northwest has 11 Xformers. Southwest has 8.",
     cta: { href: "/our-studio/", label: "Check Out Locations" },
+  },
+  appCard: {
+    title: "Download the RAD App",
+    body: "Your one stop to book APEX, RITUAL, and yoga pod. Book sessions, view brands, and filter locations without ever logging out.",
+    note: "Your email is the same for all brands. Tap “Forgot Password” if you need a reminder.",
+  },
+  bookCard: {
+    title: "Book this week",
+    body: "One schedule for Northwest and Southwest.",
+    scheduleLabel: "APEX Gainesville Schedule",
+    callLabels: { northwest: "Call NW", southwest: "Call SW" },
   },
   testimonialsTitle: "What Our Students Say",
   tilesTitle: "Inside Our Studios",
@@ -86,8 +79,8 @@ export const home = {
     },
   ],
   closing: {
-    title: "Eight classes. Two weeks. Sixty dollars.",
-    lede: "No contracts. No strings attached. Your intro does not start until your first class.",
-    cta: "Start with 8 classes for $60",
+    title: "8 classes. 2 weeks. $60. No contract.",
+    lede: "No strings attached. Your intro does not start until your first class.",
+    cta: "Elevate your fitness journey today",
   },
 };
