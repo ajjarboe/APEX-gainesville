@@ -398,6 +398,8 @@ html[data-theme="dark"] {
   font-size: clamp(1.0625rem, 1.6vw, 1.25rem);
   color: var(--foreground-soft);
   max-width: 62ch;
+  /* Even lines, so a sentence never leaves a few words dangling on the next line. */
+  text-wrap: balance;
 }
 .band-dark .lede,
 .hero .lede {
@@ -997,20 +999,6 @@ video.hero-media {
   border-color: var(--brand);
   box-shadow: var(--pod-shadow);
 }
-.price-amount {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(2.25rem, 4vw, 3rem);
-  line-height: 1;
-  letter-spacing: 0;
-}
-.price-term {
-  font-family: var(--font-display);
-  font-size: 0.8125rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
 .price-save {
   font-family: var(--font-display);
   font-size: 0.8125rem;
@@ -1019,9 +1007,20 @@ video.hero-media {
   text-transform: uppercase;
   color: var(--brand-text);
 }
+.price-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
 .price-note {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   color: var(--muted);
+  max-width: 62ch;
+  text-wrap: balance;
 }
 .price-card .btn {
   margin-top: auto;
