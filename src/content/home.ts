@@ -37,14 +37,10 @@ export const home = {
   testimonialsTitle: "What Our Students Say",
   tilesTitle: "Inside Our Studios",
   tiles: [
-    { src: "/img/studio-color-1", alt: "Student on the APEX Xformer under pink and blue light" },
+    { src: "/img/studio-color-1", alt: "Students training at APEX under pink light" },
     { src: "/img/studio-color-2", alt: "APEX class on the Xformers under blue and green light" },
-    { src: "/img/studio-color-3", alt: "APEX community flexing outside the studio" },
-    { src: "/img/studio-color-4", alt: "Students training at APEX under pink light" },
-    { src: "/img/studio-color-5", alt: "APEX class lunging on the Xformers" },
-    { src: "/img/studio-color-6", alt: "Students in an APEX class under purple light" },
-    { src: "/img/studio-color-7", alt: "Full APEX class in a plank on the Xformers" },
-    { src: "/img/studio-color-8", alt: "Students holding a plank on the APEX Xformer" },
+    { src: "/img/studio-color-3", alt: "Full APEX class in a plank on the Xformers" },
+    { src: "/img/studio-color-4", alt: "APEX class lunging on the Xformers" },
   ],
   testimonials: [
     {
