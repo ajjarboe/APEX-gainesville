@@ -18,7 +18,7 @@ export function PriceCard({
     <div className={feature ? "price-card price-card-feature" : "price-card"}>
       <p className="price-name">{name}</p>
       {save ? <p className="price-save">{save}</p> : null}
-      <div className="mt-auto pt-3">
+      <div className="mt-auto pt-6">
         <CheckoutLink offering={offering}>
           ${offerings[offering].price.toLocaleString()} {term}
         </CheckoutLink>

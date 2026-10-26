@@ -19,7 +19,7 @@ export function PricingPage() {
         <section
           key={group.id}
           id={group.id}
-          className={index % 2 === 0 ? "band" : "band band-warm"}
+          className={index % 2 === 0 ? "band band-tight" : "band band-tight band-warm"}
         >
           <div className="shell">
             <h2 className="display-md">{group.title}</h2>
@@ -33,7 +33,7 @@ export function PricingPage() {
                 ))}
               </div>
             ) : null}
-            <div className="grid-auto mt-8">
+            <div className="grid-auto mt-6">
               {group.tiers.map((tier) => (
                 <PriceCard
                   key={tier.key}
