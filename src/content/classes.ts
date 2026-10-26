@@ -45,20 +45,13 @@ export const classStyles = [
 export const deepSpace = {
   hero: {
     eyebrow: "Deep Space",
-    title: "Contemporary Pilates meets modern motion",
+    title: "MODERN PILATES REIMAGINED",
   },
   intro: [
-    "Our newest low-impact, high-intensity Pilates experience, inspired by the lineage of classical and traditional Pilates, reimagined with a fluid flow.",
-    "Expect a quick yet controlled tempo that strengthens and stretches simultaneously. Deep Space offers a more cardiovascular experience where we weave our APEX focus of maximum time under tension into the modality with seamless, fluid transitions.",
-    "You'll feel stronger connections across your entire kinetic chain, improved mobility without overloading joints, and a deeper sense of whole-body awareness.",
+    "Our newest low-impact, high-intensity Pilates experience, inspired by the lineage of classical Pilates, reimagined with a fluid flow. Expect a quick yet controlled tempo that strengthens and stretches simultaneously. Deep Space offers a more cardiovascular experience where we weave our APEX focus of maximum time under tension into the modality with seamless transitions.",
+    "You'll feel stronger connections across your entire kinetic chain, improved mobility without overloading joints, and a deeper sense of whole-body awareness. Rather than working to muscular failure, Deep Space focuses on range: explore larger ranges of motion at your joints, activate fascial lines for supple, integrated movement, and build core resilience and postural integrity without compression or strain.",
   ],
   sections: [
-    {
-      title: "Mobilize more, move deeper",
-      body: [
-        "Rather than working to muscular failure, Deep Space focuses on range: explore larger ranges of motion at your joints, activate fascial lines for supple, integrated movement, and build core resilience and postural integrity without compression or strain.",
-      ],
-    },
     {
       title: "A breath-to-movement journey",
       body: [
