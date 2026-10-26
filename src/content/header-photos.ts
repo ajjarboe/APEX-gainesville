@@ -1,7 +1,6 @@
 import type { HeaderPhoto } from "@/components/patterns/PageHeader";
 
 /** Photos behind each interior page title. Swap a photo here; files live in public/img/. */
-const square = { widths: [640, 1100], width: 1100, height: 1100 };
 
 export const headerPhotos = {
   theMachine: {
@@ -41,7 +40,14 @@ export const headerPhotos = {
     tall: true,
   },
   yourFirstClass: { src: "/img/first-class-intro", alt: "A smiling student on the Xformer in class", widths: [640, 1100, 1800], width: 1800, height: 1200 },
-  locations: { src: "/img/sw", alt: "A full class at APEX Southwest", ...square, focus: "upper" },
+  locations: {
+    src: "/img/locations-class",
+    alt: "A student twisting into a side plank on the APEX Xformer under pink studio light, with a full class in the mirrors behind her",
+    widths: [640, 1100, 1800],
+    width: 1800,
+    height: 1200,
+    focus: "upper",
+  },
   schedule: {
     src: "/img/schedule-class",
     alt: "Three students in a lunge on the Xformer machines in an APEX class",
