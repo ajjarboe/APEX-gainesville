@@ -10,6 +10,10 @@ export const locationButtons = {
   jax: "Visit apexjaxbeach.com",
 };
 
+/** Opens Google Maps with driving directions to a studio from wherever the person is. */
+export const directionsUrl = (mapQuery: string) =>
+  `https://www.google.com/maps/dir/?api=1&destination=${mapQuery}`;
+
 export const studios = [
   studioSchema.parse({
     key: "northwest",

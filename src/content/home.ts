@@ -42,6 +42,7 @@ export const home = {
     title: "Find us in Gainesville",
     src: "https://www.google.com/maps?q=Gainesville,+FL&output=embed",
     label: "Map of Gainesville, FL",
+    directions: "Directions to",
   },
   tiles: [
     { src: "/img/tile-1", alt: "APEX class on the Megaformer" },

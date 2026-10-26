@@ -6,7 +6,7 @@ import { VideoBackdrop } from "@/components/patterns/VideoBackdrop";
 import { home } from "@/content/home";
 import { pages } from "@/content/pages";
 import { site } from "@/content/site";
-import { studios } from "@/content/studios";
+import { directionsUrl, studios } from "@/content/studios";
 
 export function HomePage() {
   return (
@@ -81,6 +81,19 @@ export function HomePage() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
+          <div className="mt-6 flex flex-wrap gap-3">
+            {studios.map((studio) => (
+              <a
+                key={studio.key}
+                className="btn btn-primary"
+                href={directionsUrl(studio.mapQuery)}
+                target="_blank"
+                rel="noopener"
+              >
+                {home.map.directions} {studio.key === "northwest" ? "NW" : "SW"}
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 

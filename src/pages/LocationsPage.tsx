@@ -2,7 +2,7 @@ import { SiteChrome } from "@/components/layout/SiteChrome";
 import { PageHeader } from "@/components/patterns/PageHeader";
 import { pages } from "@/content/pages";
 import { site } from "@/content/site";
-import { locationButtons, studios } from "@/content/studios";
+import { directionsUrl, locationButtons, studios } from "@/content/studios";
 
 export function LocationsPage() {
   return (
@@ -28,7 +28,7 @@ export function LocationsPage() {
                 </a>
                 <a
                   className="btn btn-ghost"
-                  href={`https://www.google.com/maps/dir/?api=1&destination=${studio.mapQuery}`}
+                  href={directionsUrl(studio.mapQuery)}
                   target="_blank"
                   rel="noopener"
                 >
