@@ -838,6 +838,9 @@ section[id],
     var(--pod-scrim) 100%
   );
 }
+.page-photo .focus-upper {
+  object-position: 50% 28%;
+}
 .page-photo-inner {
   position: relative;
 }

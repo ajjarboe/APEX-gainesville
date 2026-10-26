@@ -10,6 +10,8 @@ export type HeaderPhoto = {
   /** Size of the largest file. */
   width: number;
   height: number;
+  /** "upper" keeps more of the top of the photo in view (heads, shoulders). */
+  focus?: "upper";
 };
 
 /**
@@ -51,7 +53,7 @@ export function PageHeader({
           width={photo.width}
           height={photo.height}
           sizes="100vw"
-          className="hero-media"
+          className={photo.focus === "upper" ? "hero-media focus-upper" : "hero-media"}
           priority
         />
         <div className="page-photo-scrim" />
