@@ -7,7 +7,7 @@ export const firstClass = {
     secondary: { href: "/schedule/", label: "See the schedule" },
   },
   tips: {
-    title: "Pro tips before your first class",
+    title: "PRO TIPS BEFORE YOUR FIRST CLASS",
     // One box of bullets. `sub` adds indented bullets under an item.
     // `emphasis: true` shows that bullet (and its sub-bullets) bold and underlined.
     items: [
