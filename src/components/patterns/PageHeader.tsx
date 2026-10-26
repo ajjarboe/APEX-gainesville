@@ -13,8 +13,9 @@ export type HeaderPhoto = {
   /**
    * "upper" keeps more of the top of the photo in view (heads, shoulders).
    * "top" pins the very top edge: use this when people fill the frame and heads sit near the top.
+   * "lower" slides the photo up so more of the bottom shows: use this when the main person sits low in the frame.
    */
-  focus?: "upper" | "top";
+  focus?: "upper" | "top" | "lower";
   /** A taller banner for group photos, so every row of faces stays in view on wide screens. */
   tall?: boolean;
 };

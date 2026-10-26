@@ -864,6 +864,9 @@ section[id],
 .page-photo .focus-top {
   object-position: 50% 0%;
 }
+.page-photo .focus-lower {
+  object-position: 50% 75%;
+}
 .page-photo-inner {
   position: relative;
   text-align: left;
