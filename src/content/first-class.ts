@@ -2,9 +2,7 @@ import { faqItemSchema } from "@/content/schema";
 
 export const firstClass = {
   hero: {
-    eyebrow: "New Client Special",
-    title: "8 Classes for $60 in 2 Weeks",
-    lede: "New to APEX? Start with 8 classes in your first 2 weeks. Here is everything to know before you walk in.",
+    title: "NEW STUDENT INTRO OFFER",
     cta: { href: "/pricing/#intro", label: "Try 8 classes for $60" },
     secondary: { href: "/schedule/", label: "See the schedule" },
   },

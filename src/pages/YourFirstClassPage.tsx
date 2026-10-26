@@ -8,19 +8,18 @@ import { pages } from "@/content/pages";
 export function YourFirstClassPage() {
   return (
     <SiteChrome path={pages.yourFirstClass.path}>
-      <PageHeader
-        photo={headerPhotos.yourFirstClass}
-        eyebrow={firstClass.hero.eyebrow}
-        title={firstClass.hero.title}
-        lede={firstClass.hero.lede}
-      >
-        <a className="btn btn-primary" href={firstClass.hero.cta.href}>
-          {firstClass.hero.cta.label}
-        </a>
-        <a className="btn btn-ghost" href={firstClass.hero.secondary.href}>
-          {firstClass.hero.secondary.label}
-        </a>
-      </PageHeader>
+      <PageHeader photo={headerPhotos.yourFirstClass} title={firstClass.hero.title} />
+
+      <section className="band-tight">
+        <div className="shell flex flex-wrap gap-3">
+          <a className="btn btn-primary" href={firstClass.hero.cta.href}>
+            {firstClass.hero.cta.label}
+          </a>
+          <a className="btn btn-primary" href={firstClass.hero.secondary.href}>
+            {firstClass.hero.secondary.label}
+          </a>
+        </div>
+      </section>
 
       <section className="band">
         <div className="shell">
