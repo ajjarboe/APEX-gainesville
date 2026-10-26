@@ -2,8 +2,9 @@ import type { OfferingKey } from "@/content/checkout";
 
 type Tier = {
   key: OfferingKey;
-  /** What you get. Shown above the price. */
+  /** What you get. Shown at the top of the card. */
   name: string;
+  /** Shown on the button after the price, e.g. "$229 per month". */
   term: string;
   save?: string;
   feature?: boolean;
@@ -13,46 +14,49 @@ type Group = {
   id: string;
   title: string;
   lede?: string;
+  /** Fine print shown right under the section title. Each line in the list gets its own line on the page. */
+  note?: string[];
   tiers: Tier[];
-  note?: string;
+};
+
+export const pricingHeader = {
+  title: "Memberships & Class Packs",
 };
 
 export const pricingNote =
   "All purchases are final. No refunds are available for drop-ins, class packs, or memberships.";
 
-const CANCELLATION =
-  "30 day cancellation notice required on all monthly & annual memberships. Monthly membership is a 2 month minimum.";
+const CANCELLATION = "30 days' notice required to cancel monthly memberships.";
 
 export const pricingGroups: Group[] = [
   {
     id: "intro",
     title: "Intro Offer",
-    lede: "No contracts. No strings attached. Your 2 weeks intro does not start until your first class.",
+    lede: "No contract. 2 weeks starts on your first class.",
     tiers: [
       {
         key: "intro",
         name: "8 Classes in 2 Weeks",
-        term: "one time",
+        term: "Intro Offer",
         feature: true,
       },
     ],
-    note: "Intro offers are a 1-time special per person. Staff will reach out to secure an alternate package if more than 1 intro is purchased.",
   },
   {
     id: "membership",
     title: "Autopay Memberships",
+    note: [CANCELLATION],
     tiers: [
       { key: "monthly4", name: "4 classes a month", term: "per month" },
       { key: "monthly8", name: "8 classes a month", term: "per month" },
       { key: "monthlyUnlimited", name: "Unlimited", term: "per month", feature: true },
       { key: "annualUnlimited", name: "Unlimited", term: "per year" },
     ],
-    note: CANCELLATION,
   },
   {
     id: "infinity",
-    title: "Infinity Membership",
-    lede: "One membership for both APEX and yoga pod. Pick the tier that matches how you train.",
+    title: "Infinity Memberships",
+    note: [CANCELLATION, "Class allotments don't roll over."],
     tiers: [
       {
         key: "infinity4x8",
@@ -80,16 +84,15 @@ export const pricingGroups: Group[] = [
         save: "Save $629 vs monthly",
       },
     ],
-    note: CANCELLATION,
   },
   {
     id: "packs",
     title: "Limited Class Options",
+    note: ["Class packs never expire & cannot be shared."],
     tiers: [
-      { key: "dropIn", name: "Drop In Class", term: "single class" },
-      { key: "pack5", name: "5 Class Pack", term: "5 classes" },
-      { key: "pack10", name: "10 Class Pack", term: "10 classes" },
+      { key: "dropIn", name: "Drop In Class", term: "per class" },
+      { key: "pack5", name: "5 Class Pack", term: "per pack" },
+      { key: "pack10", name: "10 Class Pack", term: "per pack" },
     ],
-    note: "Class packs never expire and cannot be shared.",
   },
 ];
