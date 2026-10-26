@@ -73,5 +73,6 @@ export const headerPhotos = {
     width: 1800,
     height: 1350,
     focus: "upper",
+    tall: true,
   },
 } satisfies Record<string, HeaderPhoto>;
