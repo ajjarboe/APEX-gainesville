@@ -1,6 +1,7 @@
 import { SiteChrome } from "@/components/layout/SiteChrome";
 import { JsonLd, breadcrumbSchema, gymSchema } from "@/components/patterns/JsonLd";
 import { PageHeader } from "@/components/patterns/PageHeader";
+import { headerPhotos } from "@/content/header-photos";
 import { PriceCard } from "@/components/patterns/PriceCard";
 import { pages } from "@/content/pages";
 import { pricingGroups, pricingHeader, pricingNote } from "@/content/pricing";
@@ -9,7 +10,7 @@ export function PricingPage() {
   return (
     <SiteChrome path={pages.pricing.path}>
       <JsonLd data={[...gymSchema(), breadcrumbSchema("Pricing", pages.pricing.path)]} />
-      <PageHeader eyebrow="Pricing" title={pricingHeader.title} />
+      <PageHeader photo={headerPhotos.pricing} title={pricingHeader.title} />
 
       {pricingGroups.map((group, index) => (
         <section

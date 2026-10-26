@@ -1,7 +1,7 @@
 export const home = {
   hero: {
     title: "Full body. High intensity. Low impact.",
-    lede: "Megaformer Pilates | Contemporary Pilates",
+    lede: "Modern Pilates on APEX Xformer Machines",
     cta: "Try 8 classes for $60",
     secondary: { href: "/your-first-class/", label: "Your first class" },
     video: "/video/hero.mp4",
@@ -29,15 +29,17 @@ export const home = {
   classesTeaser: {
     eyebrow: "The Workout",
     title: "Signature and Deep Space",
-    lede: "Megaformer Signature classes for endurance and shake. Deep Space for breath, mobility, and fluid contemporary Pilates.",
-    cta: { href: "/the-workout/", label: "See Signature classes" },
+    lede: "Xformer Signature Pilates classes deliver endurance, strength, and muscle failure. Deep Space Modern Pilates classes cultivate breath, mobility, and fluidity.",
+    cta: { href: "/the-workout/", label: "Check Out Classes" },
   },
   studiosTeaser: {
     eyebrow: "Our Studios",
     title: "Northwest and Southwest",
-    lede: "Convenient access to both sides of town, with spa-like locker rooms and top-of-the-line machines at each.",
-    cta: { href: "/our-studio/", label: "Visit a studio" },
+    lede: "Convenient access to APEX on both sides of town with spa-like locker rooms, retail boutiques, and 19 APEX Xformers.",
+    cta: { href: "/our-studio/", label: "Check Out Locations" },
   },
+  testimonialsTitle: "What Our Students Say",
+  tilesTitle: "Inside Our Studios",
   tiles: [
     { src: "/img/tile-1", alt: "APEX class on the Megaformer" },
     { src: "/img/tile-2", alt: "APEX studio interior" },

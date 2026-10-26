@@ -1,4 +1,5 @@
 import { SiteChrome } from "@/components/layout/SiteChrome";
+import { Carousel } from "@/components/patterns/Carousel";
 import { CheckoutLink } from "@/components/patterns/CheckoutLink";
 import { JsonLd, gymSchema, websiteSchema } from "@/components/patterns/JsonLd";
 import { Photo } from "@/components/patterns/Photo";
@@ -73,35 +74,33 @@ export function HomePage() {
 
       <section className="band">
         <div className="shell">
-          <h2 className="display-md">What students say</h2>
-          <div className="grid-auto mt-10">
+          <Carousel title={home.testimonialsTitle} label="reviews">
             {home.testimonials.map((item) => (
-              <blockquote key={item.name} className="quote">
+              <blockquote key={item.name} className="quote carousel-card">
                 <p>&ldquo;{item.quote}&rdquo;</p>
                 <cite>{item.name}</cite>
               </blockquote>
             ))}
-          </div>
+          </Carousel>
         </div>
       </section>
 
       <section className="band band-warm">
         <div className="shell">
-          <h2 className="display-md">Inside the studio</h2>
-          <div className="grid-auto mt-10">
+          <Carousel title={home.tilesTitle} label="photos" variant="flush">
             {home.tiles.map((tile) => (
               <Photo
                 key={tile.src}
                 src={tile.src}
                 alt={tile.alt}
                 widths={[640, 1100]}
-                sizes="(min-width: 900px) 20rem, 45vw"
+                sizes="(min-width: 900px) 25vw, 70vw"
                 width={1100}
                 height={1100}
-                className="media"
+                className="carousel-photo"
               />
             ))}
-          </div>
+          </Carousel>
         </div>
       </section>
 

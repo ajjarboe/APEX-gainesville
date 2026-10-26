@@ -1,5 +1,6 @@
 import { SiteChrome } from "@/components/layout/SiteChrome";
 import { PageHeader } from "@/components/patterns/PageHeader";
+import { headerPhotos } from "@/content/header-photos";
 import { PersonCard } from "@/components/patterns/PersonCard";
 import { teacherTraining } from "@/content/education";
 import { pages } from "@/content/pages";
@@ -8,6 +9,7 @@ export function TrainingPage() {
   return (
     <SiteChrome path={pages.training.path}>
       <PageHeader
+        photo={headerPhotos.training}
         title={teacherTraining.hero.title}
         lede={teacherTraining.hero.lede}
       >

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
 /* ------------------------------------------------------------------
-   0. Fonts — self-hosted. Oswald for display, Nunito Sans for body.
+   0. Fonts — self-hosted. Oswald (regular, never bold) for display, Nunito Sans for body.
    ------------------------------------------------------------------ */
 @font-face {
   font-family: "Oswald";
@@ -31,8 +31,8 @@
 }
 @font-face {
   font-family: "Oswald";
-  src: url("/fonts/oswald-700.woff2") format("woff2");
-  font-weight: 700;
+  src: url("/fonts/oswald-400.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -91,6 +91,7 @@
   --pod-sand-soft: color-mix(in srgb, var(--apex-sand) 45%, var(--apex-bone));
   --pod-scrim: color-mix(in srgb, var(--apex-ink) 35%, transparent);
   --pod-scrim-strong: color-mix(in srgb, var(--apex-ink) 55%, transparent);
+  --pod-scrim-heavy: color-mix(in srgb, var(--apex-ink) 72%, transparent);
 
   --pod-shadow: 0 14px 40px color-mix(in srgb, var(--apex-ink) 12%, transparent);
   --pod-shadow-lift: 0 22px 60px color-mix(in srgb, var(--apex-ink) 18%, transparent);
@@ -264,7 +265,7 @@ html[data-theme="dark"] {
   h3,
   h4 {
     font-family: var(--font-display);
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.05;
     letter-spacing: 0.02em;
     text-transform: uppercase;
@@ -342,6 +343,10 @@ html[data-theme="dark"] {
 }
 .band-tight {
   padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+/* Use this for the gray title box at the top of interior pages: short, so the content shows sooner. */
+.band-header {
+  padding-block: clamp(1.5rem, 3vw, 2.25rem);
 }
 .band-warm {
   background: var(--surface-warm);
@@ -814,6 +819,51 @@ section[id],
   color: var(--on-dark);
   font-size: clamp(1.85rem, 4.4vw, 3rem);
 }
+/* Photo behind an interior page title: short banner, darkened so white type reads. */
+.page-photo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: clamp(15rem, 32vw, 23rem);
+  padding-block: 2.5rem;
+  background: var(--surface-dark);
+  color: var(--on-dark);
+  overflow: hidden;
+}
+.page-photo-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    var(--pod-scrim-heavy) 0%,
+    var(--pod-scrim-strong) 55%,
+    var(--pod-scrim) 100%
+  );
+}
+.page-photo .focus-upper {
+  object-position: 50% 28%;
+}
+.page-photo-inner {
+  position: relative;
+}
+.page-photo h1 {
+  color: var(--on-dark);
+}
+.page-photo .eyebrow {
+  color: var(--sand);
+}
+.page-photo .lede {
+  color: var(--on-dark);
+}
+.page-photo .btn-ghost {
+  color: var(--on-dark);
+  border-color: var(--border-dark);
+}
+.page-photo .btn-ghost:hover {
+  background: var(--on-dark);
+  color: var(--surface-dark);
+  border-color: var(--on-dark);
+}
 video.hero-media {
   pointer-events: none;
   transform: translateZ(0);
@@ -1009,7 +1059,7 @@ video.hero-media {
 }
 .price-name {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 400;
   font-size: clamp(1.25rem, 2vw, 1.5rem);
   line-height: 1.15;
   letter-spacing: 0.04em;
@@ -1063,6 +1113,91 @@ video.hero-media {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--brand-text);
+}
+
+/* Carousel: one horizontal row, paged with arrows, swipe on phones */
+.carousel-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.carousel-nav {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+.carousel-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--foreground);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, opacity 0.2s ease;
+}
+.carousel-arrow:hover:not(:disabled) {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--on-brand);
+}
+.carousel-arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.carousel-arrow:focus-visible,
+.carousel-track:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+}
+.carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+.carousel-track > * {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+.carousel-card {
+  width: min(85%, 21rem);
+}
+.carousel-flush {
+  gap: 0;
+  border-radius: var(--radius-lg);
+}
+.carousel-photo {
+  display: block;
+  width: 70%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+@media (min-width: 640px) {
+  .carousel-photo {
+    width: 50%;
+  }
+}
+@media (min-width: 900px) {
+  .carousel-photo {
+    width: 25%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track {
+    scroll-behavior: auto;
+  }
 }
 
 /* Team */
