@@ -1,6 +1,7 @@
 import { SiteChrome } from "@/components/layout/SiteChrome";
 import { PageHeader } from "@/components/patterns/PageHeader";
 import { headerPhotos } from "@/content/header-photos";
+import { Disclose } from "@/components/patterns/Disclose";
 import { PersonCard } from "@/components/patterns/PersonCard";
 import { pages } from "@/content/pages";
 import { directors, faculty, ownership, story } from "@/content/team";
@@ -15,9 +16,10 @@ export function OurTeamPage() {
         <div className="shell-narrow">
           <h2 className="display-md">{story.title}</h2>
           <div className="prose mt-6 text-foreground-soft">
-            {story.paragraphs.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
+            <p>{story.intro}</p>
+          </div>
+          <div className="mt-6">
+            <Disclose summary={story.more} paragraphs={story.paragraphs} />
           </div>
         </div>
       </section>

@@ -2,8 +2,16 @@ import { personSchema } from "@/content/schema";
 
 export const story = {
   title: "Our Story",
+  /** Always shown above the "Read our story" opener. */
+  intro:
+    "At our core, APEX exists to transform your body, elevate your mind, and awaken joy.",
+  /** The "+" opener label. */
+  more: "Read our story",
   paragraphs: [
-    "With over a decade of expertise building yoga pod, APEX was designed to redefine what's possible on the Xformer. Each class balances intensity and intention, crafted to be safe, challenging, and exhilarating. APEX stands apart through innovative sequencing, unmatched instructor training, and a culture that's as welcoming as it is driven. Through mindful movement and community, we cultivate strength that moves beyond the machine—into every part of life.",
+    "APEX was founded by Rae Jarboe in 2019 in Gainesville, Florida, inspired by a vision to bring the pulse of the modern pilates movement to a city ready to rise. After training at studios across the country, Rae set out to create something new—an experience that blends strength, intelligence, and the artistry of movement.",
+    "With over a decade of expertise building yoga pod, APEX was designed to redefine what's possible on the Xformer. Each class balances intensity and intention, crafted to be safe, challenging, and exhilarating. APEX stands apart through innovative sequencing, unmatched instructor training, and a culture that's as welcoming as it is driven.",
+    "Through mindful movement and community, we cultivate strength that moves beyond the machine—into every part of life.",
+    "In 2025, APEX expanded to Jacksonville Beach, led in partnership with Courtney O'Donnell—a longtime APEX leader and embodiment of our values. Together, we're bringing the APEX experience to the coast and inspiring a new community to rise.",
   ],
 };
 
@@ -43,9 +51,9 @@ export const directors = [
     name: "Emily Tharp Pendley",
     role: "Director of Operations",
     bio: [
-      "Emily is the Director of Operations at APEX | yoga pod and a lead faculty member in the APEX and FIT Teacher Training Programs. She joined yoga pod in 2019 as a student and quickly fell in love with the challenge the classes provided and the community that the studio attracted. She took the first public FIT Teacher Training in 2019 while in graduate school at the University of Florida and continued her fitness education by attending one of the pre-opening APEX Teacher Trainings. During these trainings, Emily realized her passion for teaching group fitness classes and made the decision to follow her heart and pursue fitness as a career. Shortly after completing her Master's degree in early 2021, Emily began working full time at yoga pod, first as an Assistant Manager, then as the Northwest Studio Manager, eventually becoming the Regional Studio Director before being promoted to Director of Operations in 2025.",
-      "Emily currently teaches FIT, Sweat, Heat, & Beatz, and APEX classes while also overseeing the entire regional operations of both studio locations, the APEX | yoga pod staff, facilitating teacher training, and heading multiple subcommittees including our Athlete Program, Events Team, and Retail Team. She considers this role to be the biggest blessing as it's a combination of everything she loves: movement, community, teaching, and having fun!",
-      "Emily loves APEX because it's the perfect blend of gritty hard work, and infectious, effervescent energy. The work drives you to muscle failure, but in that failure you're invited to find the success of pushing yourself to a new edge, and that mental shift is worth its weight in gold to her. APEX 2 classes are her favorite for this reason — each sequence delivers a different experience that keeps her on her toes and challenges her brain and body.",
+      "Emily is the Director of Operations at APEX | yoga pod and a lead faculty member in the APEX and FIT Teacher Training Programs. She joined yoga pod in 2019 as a student, fell in love with the challenge and the community, and took the first public FIT Teacher Training while in graduate school at the University of Florida, followed by one of the pre-opening APEX Teacher Trainings. Those trainings sparked her passion for teaching, and after finishing her Master's degree in early 2021 she joined yoga pod full time, growing from Assistant Manager to Northwest Studio Manager to Regional Studio Director before becoming Director of Operations in 2025.",
+      "Emily teaches FIT, Sweat, Heat, & Beatz, and APEX while overseeing regional operations for both studios, the APEX | yoga pod staff, and teacher training, and heading our Athlete Program, Events Team, and Retail Team. She calls the role her biggest blessing: movement, community, teaching, and having fun, all in one.",
+      "Emily loves APEX for its blend of gritty hard work and infectious, effervescent energy. The work drives you to muscle failure, and in that failure you find the success of pushing to a new edge—a mental shift worth its weight in gold. APEX 2 is her favorite because each sequence keeps her on her toes and challenges her brain and body.",
     ],
   }),
   personSchema.parse({
