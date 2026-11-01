@@ -82,7 +82,7 @@ export const home = {
     },
   ],
   closing: {
-    title: "8 classes. 2 weeks. $60. No contract.",
+    title: "8 classes. 30 days. $60. No contract.",
     lede: "No strings attached. Your intro does not start until your first class.",
     cta: "Elevate your fitness journey today",
   },
