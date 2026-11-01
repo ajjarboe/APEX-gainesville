@@ -82,7 +82,7 @@ export const firstClass = {
     faqItemSchema.parse({
       question: "I want to buy my intro today but can't come until next week. What do I do?",
       answer: [
-        "Buy today. The clock does not start on your 2 weeks until after your first visit on that package.",
+        "Buy today. The clock does not start on your 30 days until after your first visit on that package.",
       ],
     }),
   ],

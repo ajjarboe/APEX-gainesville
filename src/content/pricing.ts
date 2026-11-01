@@ -32,11 +32,11 @@ export const pricingGroups: Group[] = [
   {
     id: "intro",
     title: "Intro Offer",
-    lede: "No contract. 2 weeks starts on your first class.",
+    lede: "No contract. Your 30 days start on your first class.",
     tiers: [
       {
         key: "intro",
-        name: "8 Classes in 2 Weeks",
+        name: "8 Classes in 30 Days",
         term: "Intro Offer",
         feature: true,
       },
